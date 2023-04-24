@@ -12,7 +12,7 @@
 
 <template>
 
-    <nav id="navbar" class="dark:bg-slate-800 bg-slate-50 border-solid dark:border-slate-400 border-slate-500"
+    <nav id="navbar" class="dark:dark-transparent-navbar light-transparent-navbar border-solid dark:border-b-slate-400 border-b-slate-500"
         style="border-bottom-width: 0.5px;">
 
         <div class="flex sm:ps-2 ps-8">
@@ -42,10 +42,8 @@
 
             <div class="flex-auto fixed right-0 sm:mx-1 mx-0 my-1 sm:px-3 px-1 py-2">
                 <a id="contact-btn" href="#" class="button-nav
-                    dark:text-slate-800 dark:hover:text-slate-900
-                    text-slate-800 hover:text-slate-900
-                    py-1 px-2 rounded-md
-                    sm:text-lg text-sm font-medium">Contact me</a>
+                    text-white py-1 px-2 rounded-md
+                    sm:text-lg text-sm font-semibold">Contact me</a>
             </div>
         </div>
         
@@ -64,9 +62,19 @@
     background-size: 400%;
     background-image: linear-gradient(50deg, #2ecc71, #2ecc71, #2ecc71, #1abc9c, #1ed1ad, #21e3bc, #2ecc71, #2ecc71, #2ecc71);
     transition: 0.5s;
+    animation: 2.5s infinite alternate contactshadow;
 }
 #contact-btn:hover {
     background-position: left 100% bottom 100%;
+}
+
+@keyframes contactshadow {
+  0% {
+    box-shadow: 0px 0px 50px rgb(0, 255, 170);
+  }
+  100% {
+    box-shadow: 0px 0px 10px rgb(55, 228, 200);
+  }
 }
 
 #logo {
@@ -88,8 +96,12 @@
     }
 }
 
-.transparent-navbar {
-    background-color: rgba(203, 213, 225, 0.7);
+.light-transparent-navbar {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+:is(.dark .dark\:dark-transparent-navbar) {
+    background-color: rgba(0, 0, 0, 0.527);
 }
 
 .dot {

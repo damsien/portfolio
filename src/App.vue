@@ -6,7 +6,7 @@ import './assets/tailwind.css'
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
+  // document.documentElement.classList.add('dark')
 } else {
   document.documentElement.classList.remove('dark')
 }
@@ -25,13 +25,13 @@ localStorage.removeItem('theme')
 <template>
   <div>
 
-    <header class="h-12 z-10">
+    <header class="h-12 z-10 dark:bg-black bg-white">
       <Navbar id="navbar" class="fixed w-full" />
     </header>
 
-    <main id="content" class="dark:bg-slate-800 bg-slate-50">
-      <Welcome class="h-screen" msg="You did it!" />
-      <Projects class="h-screen" msg="You did it!" />
+    <main id="content">
+      <Welcome class="welcome relative" msg="You did it!" />
+      <Projects class="welcome" msg="You did it!" />
     </main>
 
   </div>
