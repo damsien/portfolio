@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'dm': ['"DM sans"', 'sans-serif'],
-        'karla': ['Karla', 'sans-serif']
+        'karla': ['Karla', 'sans-serif'],
+        'roboto': ['"Roboto Mono"', 'monospace']
       }
     },
   },

@@ -25,13 +25,15 @@ localStorage.removeItem('theme')
 <template>
   <div>
 
-    <header class="h-12 z-10 dark:bg-black bg-white">
+    <header class="h-12 z-40 dark:bg-black bg-white">
       <Navbar id="navbar" class="fixed w-full" />
     </header>
 
     <main id="content">
+      <div id="firststep"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
       <Welcome class="welcome relative" msg="You did it!" />
-      <Projects class="welcome" msg="You did it!" />
+      <!-- <div id="thefirstline"></div> -->
+      <Projects class="projects" msg="You did it!" />
     </main>
 
   </div>
@@ -42,5 +44,39 @@ localStorage.removeItem('theme')
 #navbar {
   backdrop-filter: blur(8px);
 }
+
+#firststep {
+  position: absolute;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
+  top: 650px;
+  padding-top: 50px;
+}
+
+#thefirstsep {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-3deg) translateX(-50px);
+  width: 150%;
+}
+
+/* #thefirstline {
+  height: 0px;
+  box-shadow: 0px 0px 50px 20px #40ffa6;
+  z-index: 5;
+  animation: 5s infinite alternate cubic-bezier(.65,.29,.27,.9) thefirstline;
+}
+@keyframes thefirstline {
+  0% {
+    box-shadow: 0px 0px 50px 20px #40ffa6;
+  }
+  50% {
+    box-shadow: 10px -15px 50px 30px #40ffa6;
+  }
+  100% {
+    box-shadow: -10px 15px 50px 25px #40ffa6;
+  }
+} */
 
 </style>

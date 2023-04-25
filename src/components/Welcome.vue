@@ -10,7 +10,7 @@
     
     let message1 = "I'm a frontend developer";
     let message2 = "I'm a backend developer";
-    let message3 = "I'm a devops";
+    let message3 = "I'm a devops engineer";
     let messages = [message1, message2, message3];
 
     var currentIndex = 0;
@@ -126,17 +126,17 @@
           <p class="blend lg:text-9xl text-7xl font-bold">Welcome</p>
           <p class="blend lg:text-5xl text-3xl font-semibold">to my portofolio</p>
           <br><br>
-          <p class="blend lg:text-3xl text-xl font-bold">Damien Dassieu</p>
+          <p class="blend lg:text-3xl text-xl font-bold">Hey! I'm Damien Dassieu</p>
 
           <div id="dev-container" class="top-8 bg-slate-800 rounded-md
                       outline outline-offset-1 outline-2 py-2 ps-2">
-            <p class="text-slate-400 inline">$ </p>
-            <p id="developer" class="text-white inline"></p>
+            <p class="text-slate-400 inline font-roboto">$ </p>
+            <p id="developer" class="text-white inline font-roboto"></p>
             <div id="underscore" class="inline-block bg-slate-400 ms-2 top-1"></div>
           </div>
           <div class="relative">
             <div id="frontend" class="absolute opacity-0 text-lg">✨</div>
-            <div id="backend" class="absolute opacity-0 sm:text-lg text-sm dark:text-white text-black"
+            <div id="backend" class="absolute opacity-0 sm:text-lg text-sm dark:text-white text-black font-roboto"
             >GET <a target="_blank" class="text-blue-600 font-semibold"
               href="https://www.damiendassieu.fr/api/v1/status">https://www.damiendassieu.fr/api/v1/status</a>
             </div>
