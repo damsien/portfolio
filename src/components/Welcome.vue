@@ -114,9 +114,10 @@
 
 
     <div id="bubbles" class="absolute w-full welcome overflow-hidden">
-      <div id="bubble1"></div>
+      <div id="bubble5"></div>
       <div id="bubble2"></div>
       <div id="bubble3"></div>
+      <div id="bubble1"></div>
       <div id="bubble4"></div>
     </div>
     
@@ -230,7 +231,7 @@
     border-radius: 50%;
     left: 15%;
     background-color: rgb(3, 66, 255);
-    animation: 3s infinite alternate cubic-bezier(.65,.29,.27,.9) bubble1;
+    animation: 3s infinite alternate cubic-bezier(.95,-0.01,.06,.97) bubble1;
 }
 @keyframes bubble1 {
   0% {
@@ -304,6 +305,26 @@
   100% {
     left: 60%;
     top: 20%;
+  }
+}
+
+#bubble5 {
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 15%;
+    background-color: rgb(3, 66, 255);
+    animation: 3s infinite alternate cubic-bezier(.45,0,.56,1) bubble5;
+}
+@keyframes bubble5 {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 120px;
+    height: 120px;
   }
 }
 

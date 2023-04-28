@@ -2,63 +2,156 @@
   defineProps<{
     msg: string
   }>()
+
+  window.onload = function() {
+    const nodejs = document.querySelectorAll('img.nodejs');
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      nodejs.forEach(n => {
+        // @ts-ignore
+        n.src = '/src/assets/icons/nodejs-dark.png';
+      });
+    } else {
+      nodejs.forEach(n => {
+        // @ts-ignore
+        n.src = '/src/assets/icons/nodejs-light.png';
+      });
+    }
+  }
+
 </script>
 
 <template>
   <div>
-    <div id="main-bg" class="dark:bg-gray-900 bg-gray-200 projects dark:text-white text-black">
+    <div id="main-bg" class="dark:bg-gray-900 bg-gray-200 dark:text-white text-black">
 
       <p class="lg:text-9xl text-7xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
 
+      <!-- Pixel War -->
       <div class="sm:grid sm:grid-cols-2 top-44 flex flex-col-reverse">
-
-        <!-- Pixel War -->
         <div class="w-full">
-          <div class="mx-auto w-80 lg:w-96 mb-8">
+          <div class="mx-auto w-5/6 mb-8">
             <p class="text-left text-lg font-semibold">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
             </p>
-            <br>
+          </div>
+          
+          <div class="w-5/6 mx-auto flex flex-col-reverse sm:block">
+            <table class="items-group lg:inline-grid">
+              <tr class="text-center">
+                <td class="item"><img src="../assets/icons/typescript.png">Typescript</td>
+                <td class="item"><img src="../assets/icons/nodejs-light.png" width="100px" class="pt-1 nodejs pb-3">Nodejs</td>
+                <td class="item"><img src="../assets/icons/mariadb.svg" class="pt-2 pb-4">Mariadb</td>
+              </tr>
+              <tr class="text-center">
+                <td class="item"><img src="../assets/icons/vue.png" class="pt-1">Vue</td>
+                <td class="item"><img src="../assets/icons/kubernetes.png" width="70px">Kubernetes</td>
+                <td class="item"><img src="../assets/icons/redis.svg" class="pt-1 pb-1">Redis</td>
+              </tr>
+            </table>
 
-            <div class="grid grid-cols-2">
-              <div class="w-full">
+            <div class="lg:inline-grid lg:ms-10 grid lg:grid-cols-none grid-cols-2 mb-7 sm:mb-0">
+              <div class="w-full lg:mb-3">
                 <img src="../assets/web.png" width="15px" class="inline-block extern-icon">
-                <a href="https://place.inpt.fr" target="_blank"> Open the game</a>
+                <a class="link" href="https://place.inpt.fr" target="_blank"> Open the game</a>
               </div>
-
               <div>
                 <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
-                <a href="https://github.com/Yltaros/rplace-frontend" target="_blank"> Frontend repository</a><br>
+                <a class="link" href="https://github.com/Yltaros/rplace-frontend" target="_blank"> Frontend repository</a><br>
 
                 <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
-                <a href="https://github.com/Yltaros/rplace-backend" target="_blank"> Backend repository</a><br>
+                <a class="link" href="https://github.com/Yltaros/rplace-backend" target="_blank"> Backend repository</a><br>
 
                 <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
-                <a href="https://github.com/Yltaros/rplace-infra" target="_blank"> Infra repository</a><br>
+                <a class="link" href="https://github.com/Yltaros/rplace-infra" target="_blank"> Helm chart repository</a><br>
               </div>
             </div>
           </div>
-          <table class="items-group">
-            <tr>
-              <td class="item"><img src="../assets/icons/typescript.png"></td>
-              <td class="item"><img src="../assets/icons/vue.png" class="pt-1"></td>
-              <td class="item"><img src="../assets/icons/mariadb.svg" class="pt-2"></td>
-            </tr>
-            <tr>
-              <td class="item"><img src="../assets/icons/nestjs.svg"></td>
-              <td class="item"><img src="../assets/icons/vite.png"></td>
-              <td class="item"><img src="../assets/icons/redis.svg" class="pt-1"></td>
-            </tr>
-          </table>
         </div>
         <div class="w-full sm:-top-14 mb-12">
           <p class="text-5xl font-semibold text-center -top-14 sm:top-0">Pixel War</p>
           <img src="../assets/projects/pixelwar.png" class="mx-auto mt-4">
         </div>
+      </div>
 
+      <br><br><br><br><br><br><br><br><br><br><br><br>
 
+      <!-- Smartshuffle -->
+      <div class="sm:grid sm:grid-cols-2">
+        <div class="w-full mb-12">
+          <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
+          <div class="text-center mt-4">
+            <img width="175px" src="../assets/projects/smartshuffle1.gif" class="inline-block pe-1">
+            <img width="170px" src="../assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
+          </div>
+        </div>
+        <div class="w-full sm:top-14 top-0">
+          <div class="mx-auto w-80 lg:w-96 mb-8">
+            <p class="text-left text-lg font-semibold">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
+            </p>
+            <br>
+            <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+            <a class="link" href="https://github.com/Yltaros/Smartshuffle" target="_blank"> Repository</a><br>
+          </div>
+          <table class="items-group">
+            <tr class="text-center">
+              <td class="item"><img src="../assets/icons/flutter.png">Flutter</td>
+              <td class="item"><img src="../assets/icons/dart.png">Dart</td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
+      <br><br><br><br><br><br>
 
+      <!-- Minja -->
+      <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse">
+        <div class="w-full sm:top-14 top-0">
+          <div class="mx-auto w-80 lg:w-96 mb-8">
+            <p class="text-left text-lg font-semibold">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
+            </p>
+            <br>
+            <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+            <a class="link" href="https://github.com/Yltaros/Minja" target="_blank"> Repository</a><br>
+          </div>
+          <table class="items-group">
+            <tr class="text-center">
+              <td class="item"><img src="../assets/icons/java.png">Java</td>
+              <td class="item"><img src="../assets/icons/jira.png">Jira</td>
+            </tr>
+          </table>
+        </div>
+        <div class="w-full mb-12">
+          <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
+          <img src="../assets/projects/minja.png" width="700px" class="mx-auto mt-4">
+        </div>
+      </div>
+
+      <br><br><br><br><br><br>
+
+      <!-- Dato -->
+      <div class="sm:grid sm:grid-cols-2">
+        <div class="w-full mb-12">
+          <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Dato</p>
+          <img src="../assets/projects/dato.png" width="700px" class="mx-auto mt-4">
+        </div>
+        <div class="w-full sm:top-14 top-0">
+          <div class="mx-auto w-80 lg:w-96 mb-8">
+            <p class="text-left text-lg font-semibold">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
+            </p>
+            <br>
+            <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+            <a class="link" href="https://github.com/Yltaros/Dato" target="_blank"> Repository</a><br>
+          </div>
+          <table class="items-group">
+            <tr class="text-center">
+              <td class="item"><img src="../assets/icons/ada.svg" class="mb-2 ada-lang"></td>
+              <td class="item"><img src="../assets/icons/typescript.png">Typescript</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
     </div>
@@ -66,6 +159,17 @@
 </template>
 
 <style scoped>
+
+.link:hover {
+  color: #00b378;
+}
+:is(.dark .link:hover) {
+  color: #00ffaa;
+}
+
+.nodejs {
+  margin-top: 10px;
+}
 
 .item {
   width: 70px;
@@ -126,6 +230,9 @@
 }
 
 :is(.dark .extern-icon) {
+  filter: invert();
+}
+:is(.dark .ada-lang) {
   filter: invert();
 }
 

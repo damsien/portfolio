@@ -33,7 +33,7 @@ localStorage.removeItem('theme')
       <div id="firststep"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
       <Welcome class="welcome relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
-      <Projects class="projects" msg="You did it!" />
+      <Projects msg="You did it!" />
     </main>
 
   </div>
