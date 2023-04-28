@@ -31,7 +31,13 @@
         <div class="w-full">
           <div class="mx-auto w-5/6 mb-8">
             <p class="text-left text-lg font-semibold">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
+              Pixel War is an online game inspired by Reddit r/place. The principle is simple: put pixels on the map to form a drawing.
+            </p>
+            <p class="text-left text-lg font-semibold">
+              The first session I launched welcomed 500 players for 150K pixels placed. The challenge was to ensure the state of the game in real time on all devices. The "real time" part is managed by Redis while the history of the game is stored in Mariadb.
+            </p>
+            <p class="text-left text-lg font-semibold">
+              The stack of the site is quite classical with Nestjs for the api/backend and Vue for the frontend.
             </p>
           </div>
           
@@ -69,25 +75,30 @@
         </div>
         <div class="w-full sm:-top-14 mb-12">
           <p class="text-5xl font-semibold text-center -top-14 sm:top-0">Pixel War</p>
+          <p class="text-xs text-center -top-14 sm:top-0">2022</p>
           <img src="../assets/projects/pixelwar.png" class="mx-auto mt-4">
         </div>
       </div>
 
-      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
       <!-- Smartshuffle -->
       <div class="sm:grid sm:grid-cols-2">
         <div class="w-full mb-12">
           <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
+          <p class="text-xs text-center -top-14 sm:top-0">2020</p>
           <div class="text-center mt-4">
             <img width="175px" src="../assets/projects/smartshuffle1.gif" class="inline-block pe-1">
             <img width="170px" src="../assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
           </div>
         </div>
         <div class="w-full sm:top-14 top-0">
-          <div class="mx-auto w-80 lg:w-96 mb-8">
+          <div class="mx-auto w-5/6 mb-8">
             <p class="text-left text-lg font-semibold">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
+              In the world of audio streaming, some music is only uploaded on certain platforms. How to create a playlist with music from different platforms? Smartshuffle answers this need. For now, it is possible to merge playlists from Spotify and Youtube.
+            </p>
+            <p class="text-left text-lg font-semibold">
+              The mobile application was entirely built with the Flutter framework. The challenge was to get to grips with this new way of designing a UI that moves away from classic mobile design frameworks such as React or Ionic.
             </p>
             <br>
             <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
@@ -107,9 +118,12 @@
       <!-- Minja -->
       <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse">
         <div class="w-full sm:top-14 top-0">
-          <div class="mx-auto w-80 lg:w-96 mb-8">
+          <div class="mx-auto w-5/6 mb-8">
             <p class="text-left text-lg font-semibold">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
+              Minja is a project realized with the help of 4 other friends. We created a mod for the game Minecraft. The technical challenge was to bring new game mechanics that were not coded in the game.
+            </p>
+            <p class="text-left text-lg font-semibold">
+              The project was carried out in a specific framework in which we used the agile method. The Jira tool helped us a lot in the management of our sprints.
             </p>
             <br>
             <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
@@ -124,6 +138,7 @@
         </div>
         <div class="w-full mb-12">
           <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
+          <p class="text-xs text-center -top-14 sm:top-0">2022</p>
           <img src="../assets/projects/minja.png" width="700px" class="mx-auto mt-4">
         </div>
       </div>
@@ -134,12 +149,13 @@
       <div class="sm:grid sm:grid-cols-2">
         <div class="w-full mb-12">
           <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Dato</p>
+          <p class="text-xs text-center -top-14 sm:top-0">2021</p>
           <img src="../assets/projects/dato.png" width="700px" class="mx-auto mt-4">
         </div>
         <div class="w-full sm:top-14 top-0">
-          <div class="mx-auto w-80 lg:w-96 mb-8">
+          <div class="mx-auto w-5/6 mb-8">
             <p class="text-left text-lg font-semibold">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lacus ac mi sollicitudin tristique quis sed enim. Quisque sodales purus scelerisque ante condimentum.
+              For this project realized with a friend. The idea was to create a programming language using a language we didn't like. At that time, we had no knowledge of language translation methods. The challenge was to find the most optimal way to process a piece of program written in "Dato".
             </p>
             <br>
             <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
