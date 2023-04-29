@@ -122,7 +122,7 @@
     </div>
     
     <div class="grid sm:grid-cols-2">
-      <div class="w-full top-28 h-72">
+      <div class="w-full top-1/3 h-72">
         <div class="sm:float-right mx-auto text-left ps-8 sm:ps-0">
           <p class="blend lg:text-9xl text-7xl font-bold">Welcome</p>
           <p class="blend lg:text-5xl text-3xl font-semibold">to my portofolio</p>

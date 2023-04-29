@@ -55,7 +55,7 @@
               </tr>
             </table>
 
-            <div class="lg:inline-grid lg:ms-10 grid lg:grid-cols-none grid-cols-2 mb-7 sm:mb-0">
+            <div class="lg:inline-grid lg:ms-8 grid xl:grid-cols-none grid-cols-2 mb-7 sm:mb-0">
               <div class="w-full lg:mb-3">
                 <img src="../assets/web.png" width="15px" class="inline-block extern-icon">
                 <a class="link" href="https://place.inpt.fr" target="_blank"> Open the game</a>
