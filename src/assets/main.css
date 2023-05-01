@@ -6,6 +6,14 @@
   font-weight: normal;
 }
 
+body {
+  transition: 500ms forwards;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
 
 @media (min-width: 1024px) {
 }

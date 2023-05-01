@@ -30,8 +30,8 @@ localStorage.removeItem('theme')
     </header>
 
     <main id="content">
-      <div id="firststep"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
-      <Welcome class="welcome relative" msg="You did it!" />
+      <div id="projects"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
+      <Welcome id="welcome" class="welcome relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
       <Projects msg="You did it!" />
     </main>
@@ -45,7 +45,7 @@ localStorage.removeItem('theme')
   backdrop-filter: blur(8px);
 }
 
-#firststep {
+#projects {
   position: absolute;
   overflow: hidden;
   height: 600px;
@@ -56,7 +56,7 @@ localStorage.removeItem('theme')
 
 #thefirstsep {
   position: absolute;
-  z-index: 1;
+  z-index: 8;
   transform: rotate(-3deg) translateX(-50px);
   width: 150%;
 }

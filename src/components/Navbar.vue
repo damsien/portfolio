@@ -17,7 +17,7 @@
 
         <div class="flex sm:ps-2 ps-8">
             <div class="sm:mx-1 mx-0 my-1 sm:px-3px-1 py-2">
-                <a href="#" class="button-nav
+                <a href="#welcome" class="button-nav
                     dark:text-slate-300 dark:hover:text-slate-200
                     text-slate-600 hover:text-slate-800
                     sm:text-lg text-sm font-medium">Introduction</a>
@@ -25,7 +25,7 @@
             </div>
             
             <div class="sm:mx-1 mx-0 my-1 sm:px-3 px-1 py-2">
-                <a href="#" class="button-nav
+                <a href="#projects" class="button-nav
                     dark:text-slate-300 dark:hover:text-slate-200
                     text-slate-600 hover:text-slate-800
                     sm:text-lg text-sm font-medium">Projects</a>
@@ -33,7 +33,7 @@
             </div>
             
             <div class="sm:mx-1 mx-0 my-1 sm:px-3 px-1 py-2">
-                <a href="#" class="button-nav
+                <a href="#experience" class="button-nav
                     dark:text-slate-300 dark:hover:text-slate-200
                     text-slate-600 hover:text-slate-800
                     sm:text-lg text-sm font-medium">Experience</a>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="flex-auto fixed right-0 sm:mx-1 mx-0 my-1 sm:px-3 px-1 py-2">
-                <a id="contact-btn" href="#" class="button-nav
+                <a id="contact-btn" href="#contact" class="button-nav
                     text-white py-1 px-2 rounded-md
                     sm:text-lg text-sm font-semibold">Contact me</a>
             </div>
