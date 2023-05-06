@@ -3,10 +3,11 @@ import Projects from './components/Projects.vue'
 import Welcome from './components/Welcome.vue'
 import Navbar from './components/Navbar.vue'
 import './assets/tailwind.css'
+import Experience from './components/Experience.vue'
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
+  // document.documentElement.classList.add('dark')
 } else {
   document.documentElement.classList.remove('dark')
 }
@@ -34,6 +35,7 @@ localStorage.removeItem('theme')
       <Welcome id="welcome" class="welcome relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
       <Projects msg="You did it!" />
+      <Experience />
     </main>
 
   </div>
