@@ -85,7 +85,7 @@
     <div id="main-bg" class="dark:bg-gray-900 bg-gray-200 dark:text-white text-black">
       <div id="bubble" class="bstep0"></div>
 
-      <p class="lg:text-9xl text-7xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
+      <p id="project-title" class="lg:text-9xl text-7xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
       
       <div class="overflow-hidden">
         <div id="blob"></div>
@@ -244,6 +244,14 @@
 </template>
 
 <style scoped>
+
+
+#project-title {
+  text-shadow: 0 0 150px #00a3de;
+}
+:is(.dark #project-title) {
+  text-shadow: 0 0 150px rgba(41, 0, 222, 0.7);
+}
 
 .link:hover {
   color: #00b378;

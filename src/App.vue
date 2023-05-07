@@ -35,7 +35,7 @@ localStorage.removeItem('theme')
       <Welcome id="welcome" class="welcome relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
       <Projects msg="You did it!" />
-      <Experience />
+      <Experience id="experience" />
     </main>
 
   </div>

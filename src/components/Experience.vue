@@ -9,6 +9,7 @@
     <div>
         <div class="dark:bg-gray-900 bg-gray-200 dark:text-white text-black w-full">
 
+            <div class="w-full h-0.5 dark:bg-gray-200 bg-gray-900"></div>
             <div id="title" class="lg:h-80 h-64 pt-20 overflow-hidden">
                 <div class="w-fit mx-auto z-10">
                     <p class="lg:text-9xl text-7xl font-bold text-gray-800 dark:text-white">Experience</p>
@@ -22,13 +23,14 @@
             </div>
 
 
-            <div id="main-parallax">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia varius risus, at aliquam libero rhoncus sit amet. Quisque non urna nec diam ultricies elementum. Fusce auctor ligula eget lobortis iaculis. Proin sit amet aliquet tellus, ut interdum nibh. Vestibulum enim leo, euismod id nisi et, laoreet fermentum leo. Aenean eros magna, consequat ac erat pellentesque, interdum tempus lacus. Suspendisse condimentum felis non arcu accumsan commodo. Morbi fringilla lectus tortor, vitae eleifend neque rhoncus eu.
-
-Proin mollis, nisl vitae pulvinar porttitor, ex nulla faucibus magna, ut pulvinar odio ipsum vel turpis. Nullam pellentesque a turpis et fringilla. Duis mattis elementum augue, suscipit commodo urna bibendum eu. Pellentesque iaculis nisi at volutpat dignissim. Nunc ultricies dictum magna, non elementum nunc scelerisque non. Donec imperdiet tellus ac odio auctor, ut tempus justo sollicitudin. Curabitur nec ex sit amet est dapibus sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis felis at rhoncus rhoncus. Sed sodales, sem ac suscipit interdum, lacus dolor condimentum libero, et efficitur urna diam sed nunc. Nunc dignissim euismod ex, eget aliquam elit. Sed blandit cursus tellus, vel scelerisque neque aliquet sit amet. Nam scelerisque luctus sem, id mattis quam elementum aliquam.
-
-
-
+            <div id="main-parallax" class="relative w-full" style="height: 2000px;">
+              <div id="bubbles" class="absolute w-full overflow-hidden">
+                <div id="bubble5"></div>
+                <div id="bubble2"></div>
+                <div id="bubble3"></div>
+                <div id="bubble1"></div>
+                <div id="bubble4"></div>
+              </div>
             </div>
         </div>
     </div>
@@ -36,6 +38,7 @@ Proin mollis, nisl vitae pulvinar porttitor, ex nulla faucibus magna, ut pulvina
 
 
 <style scoped>
+
 
 
 #exp-title-bar {

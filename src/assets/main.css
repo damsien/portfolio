@@ -6,9 +6,12 @@
   font-weight: normal;
 }
 
-body {
+body, #navbar {
+  max-width: 3100px;
+  margin: auto auto;
   transition: 500ms forwards;
 }
+
 
 * {
   scroll-behavior: smooth !important;
@@ -21,4 +24,9 @@ body {
 
 .welcome {
   height: 900px;
+}
+
+*::selection {
+  color: #70d9ff;
+  background-color: #00b83d;
 }
