@@ -1,12 +1,12 @@
 <script setup lang="ts">
-  import $ from 'jquery'
+import { onMounted } from 'vue'
 
   defineProps<{
     msg: string
   }>()
 
 
-  $(function() {
+  onMounted(() => {
     
     let message1 = "I'm a frontend developer";
     let message2 = "I'm a backend developer";
@@ -27,8 +27,10 @@
       appendNextCharacter(msg, 0);
 
       function appendNextCharacter(msg: string, i: number) {
-        let sentence = $('#developer').html() + msg.charAt(i);
-        $('#developer').html(sentence);
+        let dev = document.getElementById('developer');
+        let sentence = document.getElementById('developer')?.innerHTML + msg.charAt(i);
+        //@ts-ignore
+        dev.innerHTML = sentence;
         i++;
 
         if (i < msg.length) {
@@ -38,21 +40,21 @@
           
           switch (currentIndex) {
             case 0: {
-              $('#frontend').removeClass('opacity-0');
-              $('#frontend').removeClass('hide-embed');
-              $('#frontend').addClass('show-embed');
+              document.querySelector('#frontend')?.classList.remove('opacity-0');
+              document.querySelector('#frontend')?.classList.remove('hide-embed');
+              document.querySelector('#frontend')?.classList.add('show-embed');
               break;
             }
             case 1: {
-              $('#backend').removeClass('opacity-0');
-              $('#backend').removeClass('hide-embed');
-              $('#backend').addClass('show-embed');
+              document.querySelector('#backend')?.classList.remove('opacity-0');
+              document.querySelector('#backend')?.classList.remove('hide-embed');
+              document.querySelector('#backend')?.classList.add('show-embed');
               break;
             };
             case 2: {
-              $('#devops').removeClass('opacity-0');
-              $('#devops').removeClass('hide-embed');
-              $('#devops').addClass('show-embed');
+              document.querySelector('#devops')?.classList.remove('opacity-0');
+              document.querySelector('#devops')?.classList.remove('hide-embed');
+              document.querySelector('#devops')?.classList.add('show-embed');
               break;
             };
           }
@@ -64,27 +66,29 @@
 
       function removeNextCharacter(length: number) {
         isRemoving = true;
-        let sentence = $('#developer').html();
+        let dev = document.getElementById('developer');
+        let sentence = document.getElementById('developer')?.innerHTML ?? '';
         sentence = sentence.slice(0, -1); // remove the last character
-        $('#developer').html(sentence);
+        //@ts-ignore
+        dev.innerHTML = sentence;
 
         if (sentence.length > 0) {
           
           
           switch (currentIndex) {
             case 0: {
-              $('#frontend').addClass('hide-embed');
-              $('#frontend').removeClass('show-embed');
+              document.querySelector('#frontend')?.classList.add('hide-embed');
+              document.querySelector('#frontend')?.classList.remove('show-embed');
               break;
             }
             case 1: {
-              $('#backend').addClass('hide-embed');
-              $('#backend').removeClass('show-embed');
+              document.querySelector('#backend')?.classList.add('hide-embed');
+              document.querySelector('#backend')?.classList.remove('show-embed');
               break;
             };
             case 2: {
-              $('#devops').addClass('hide-embed');
-              $('#devops').removeClass('show-embed');
+              document.querySelector('#devops')?.classList.add('hide-embed');
+              document.querySelector('#devops')?.classList.remove('show-embed');
               break;
             };
           }

@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
+
   defineProps<{
     msg: string
   }>()
 
-  window.onload = function() {
+  onMounted(() => {
     const nodejs = document.querySelectorAll('img.nodejs');
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       nodejs.forEach(n => {
@@ -76,7 +78,7 @@
       document.body.dispatchEvent(event);
     }));
 
-  }
+  })
 
 </script>
 
@@ -246,12 +248,12 @@
 <style scoped>
 
 
-#project-title {
+/* #project-title {
   text-shadow: 0 0 150px #00a3de;
 }
 :is(.dark #project-title) {
   text-shadow: 0 0 150px rgba(41, 0, 222, 0.7);
-}
+} */
 
 .link:hover {
   color: #00b378;

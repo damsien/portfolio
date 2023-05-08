@@ -1,11 +1,10 @@
 <script setup lang="ts">
-    import $ from 'jquery'
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 60) {
-            $('#navbar').addClass('dark:bg-slate-800/70 bg-slate-50/70');
+            document.getElementById('navbar')?.classList.add('dark:bg-slate-800/70 bg-slate-50/70');
         } else {
-            $('#navbar').removeClass('dark:bg-slate-800/70 bg-slate-50/70');
+            document.getElementById('navbar')?.classList.remove('dark:bg-slate-800/70 bg-slate-50/70');
         }
     });
 </script>
