@@ -239,7 +239,7 @@ import { onMounted } from 'vue'
           </div>
 
         </div>
-    <br><br><br><br><br><br>
+    <br id="experience"><br><br><br><br><br>
       </div>
     </div>
   </div>
@@ -247,33 +247,6 @@ import { onMounted } from 'vue'
 
 <style scoped>
 
-
-/* #project-title {
-  text-shadow: 0 0 150px #00a3de;
-}
-:is(.dark #project-title) {
-  text-shadow: 0 0 150px rgba(41, 0, 222, 0.7);
-} */
-
-.link:hover {
-  color: #00b378;
-}
-:is(.dark .link:hover) {
-  color: #00ffaa;
-}
-
-.nodejs {
-  margin-top: 10px;
-}
-
-.item {
-  width: 70px;
-  height: 70px;
-  border-radius: 100px;
-  padding: 12px;
-  margin: 10px;
-  display: inline-block;
-}
 
 @media (min-width: 768px) {
   .item {
@@ -297,16 +270,16 @@ import { onMounted } from 'vue'
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(50deg, #ffffff, #e4e0ff);
-  box-shadow: 0px 0px 100px 10px #cec5ff;
+  background-image: linear-gradient(50deg, #ffffff, #e8fff9);
+  box-shadow: 0px 0px 100px 10px #c5fff0;
   animation: 5s infinite alternate light-groups-shadow;
 }
 @keyframes light-groups-shadow {
   0% {
-    box-shadow: 0px 0px 100px 10px #cec5ff;
+    box-shadow: 0px 0px 100px 10px #c5fff0;
   }
   100% {
-    box-shadow: 0px 0px 80px 20px #cec5ff;
+    box-shadow: 0px 0px 80px 20px #c5fff0;
   }
 }
 :is(.dark .items-group) {
@@ -324,17 +297,13 @@ import { onMounted } from 'vue'
   }
 }
 
-:is(.dark .extern-icon) {
-  filter: invert();
+:is(.dark #blob) {
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  opacity: 0.8;
 }
-:is(.dark .ada-lang) {
-  filter: invert();
-}
-
-
 #blob {
   position: absolute;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
+  background: linear-gradient(to right, aquamarine, rgb(3, 189, 235));
   height: 200px;
   aspect-ratio: 1;
   left: 50%;
@@ -342,7 +311,7 @@ import { onMounted } from 'vue'
   translate: -50%, 50%;
   border-radius: 50%;
   animation: rotate-blob 20s infinite;
-  opacity: 0.8;
+  opacity: 0.5;
   filter: blur(40px);
 }
 @keyframes rotate-blob {

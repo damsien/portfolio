@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 
-var baseY = 0;
+var baseY = 10000;
 
 onMounted(() => {
 
@@ -26,20 +26,23 @@ onMounted(() => {
       let speed = element.dataset.speed ?? '0';
       let translateX = '0px';
       if (element.style.transform != '') {
-        translateX = element.style.transform.split('(')[1].split(',')[0] ?? 0;
+        translateX = element.style.transform.split('(')[1].split(',')[0];
       }
       element.style.transform = `translate(${translateX}, ${scroll * parseFloat(speed)}px)`;
     });
   }));
   window.addEventListener('mousemove', ((e) => {
     let mousex = window.screen.width/2 - (e.clientX);
+    let mousey = (window.screen.height/2 - (e.clientY))/50;
 
     translate.forEach(el => {
       let element = el as HTMLElement;
       let mSpeed = element.dataset.mspeed ?? '0';
-      let translateY = '0px';
+      let translateY = `${mousey * parseFloat(mSpeed)}px`;
       if (element.style.transform != '') {
-        translateY = element.style.transform.split('(')[1].split(',')[1].split(')')[0] ?? 0;
+        translateY = parseFloat(element.style.transform.split('(')[1].split(', ')[1].split('px)')[0])
+                    + (mousey * parseFloat(mSpeed))
+                    + 'px';
       }
       element.style.transform = `translate(${mousex * parseFloat(mSpeed)}px, ${translateY})`;
     });
@@ -73,6 +76,57 @@ onMounted(() => {
                 <div id="bubble2b" class="bubble translate" data-speed="-1.2" data-mspeed="0.7"></div>
                 <div id="bubble3b" class="bubble translate" data-speed="-1" data-mspeed="0.25"></div>
               </div>
+              
+              <div class="pt-16 px-10 lg:px-20">
+                <div id="orange">
+                  <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
+                    <div class="col-span-3 sm:col-span-1">
+                      <p class="font-bold text-6xl sm:hidden text-center translate" data-speed="-0.05">2021-2024</p>
+                      <p class="font-bold lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.1">
+                        2021<span id="year-separator"></span>2024</p>
+                      <div id="year-line" class="lg:block hidden translate" data-speed="0.1"></div>
+                    </div>
+                    <div class="block sm:hidden col-span-3 mx-auto">
+                      <div class="flex">
+                        <img class="me-2 h-24 w-24" src="../assets/experience/orange.png">
+                        <p class="font-semibold text-xl w-56">First network and telecom company in France</p>
+                      </div>
+                    </div>
+                    <div class="col-span-3">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et nisi ac nibh vehicula porttitor vitae in ipsum. Proin efficitur hendrerit tellus at dictum. Donec congue leo eget fermentum hendrerit. Praesent convallis augue enim, quis hendrerit purus cursus eu. Ut non nulla ac ante ultrices ornare vitae at lacus. Mauris pulvinar metus vel libero mollis, ac sagittis est ornare. Sed varius ac lacus sit amet tristique. Mauris rutrum interdum leo, posuere luctus turpis pulvinar sit amet. Praesent bibendum vitae lectus ut ullamcorper.
+
+Duis nec sem tincidunt, finibus metus eu, ultricies sapien. Maecenas consequat sem id tempus facilisis. Fusce eget libero augue. Donec fermentum sapien nec lorem lacinia, in luctus est mattis. In at leo mi. Ut pellentesque nulla vitae ipsum suscipit, ac ornare purus scelerisque. Mauris ac venenatis metus. Sed eget quam ultricies, placerat magna vitae, dictum eros.
+
+Sed non malesuada eros, sit amet tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus vehicula metus ac urna feugiat mollis. Maecenas non sollicitudin ex, vitae vehicula enim. Curabitur placerat mattis fermentum. Suspendisse consectetur dolor ut dolor lobortis, id tincidunt massa tincidunt. Pellentesque ut magna at eros fringilla cursus. Fusce aliquet metus sed rutrum imperdiet. Morbi a elit id ligula bibendum aliquam. Morbi vel augue massa. In vel erat urna. Donec vitae eros pretium nisl venenatis ultricies. Suspendisse potenti. Nulla non rhoncus nisl. Donec sed nisi non tellus bibendum consectetur a nec massa. Nullam a justo eu enim suscipit sagittis.
+                      </p>
+                    </div>
+                    <div class="sm:col-span-2 col-span-3">
+                      <div class="mb-5 sm:block hidden">
+                        <div class="flex translate" data-speed="-0.02">
+                          <img class="me-2 h-24 w-24" src="../assets/experience/orange.png">
+                          <p class="font-semibold text-xl w-52">First network and telecom company in France</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/typescript.png">Typescript</td>
+                            <td class="item"><img src="../assets/icons/nodejs-light.png" width="100px" class="pt-1 nodejs pb-3">Nodejs</td>
+                            <td class="item"><img src="../assets/icons/mariadb.svg" class="pt-2 pb-4">Mariadb</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/vue.png" class="pt-1">Vue</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="70px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/redis.svg" class="pt-1 pb-1">Redis</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
         </div>
     </div>
@@ -80,6 +134,88 @@ onMounted(() => {
 
 
 <style scoped>
+
+
+
+@media (width >= 1300px) {
+  .item {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (width >= 1023px) and (width >= 1300px) {
+  .item {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (width >= 800px) and (width < 1023px) {
+  .item {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (width > 640px) and (width < 800px) {
+  .items-group {
+    width: 100%;
+  }
+  .item {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+@media (width < 640px) {
+  .item {
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+}
+
+.items-group {
+  border: solid 2px #f0f0f0;
+  border-radius: 30px;
+  border-collapse: separate;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+:is(.dark .items-group) {
+  border: solid 2px #3b3b3b;
+  background-color: black;
+}
+
+
+#year-line {
+  position: relative;
+  float: right;
+  top: 20px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.511);
+  height: 100px;
+  width: 0.5px;
+}
+
+:is(.dark #year-separator) {
+  background-color: white;
+}
+#year-separator {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 17px;
+  width: 5.5px;
+  top: 2px;
+  background-color: black;
+}
 
 
 
@@ -108,18 +244,27 @@ onMounted(() => {
 }
 
 #bubble1b {
-  background-color: rgba(13, 255, 0, 0.4);
+  filter: blur(20px);
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 255, 102, 0.626);
   top: 200px;
   left: 20%;
 }
 
 #bubble2b {
+  filter: blur(50px);
+  width: 500px;
+  height: 500px;
   background-color: rgba(0, 255, 255, 0.6);
   top: 1000px;
   left: 60%;
 }
 
 #bubble3b {
+  filter: blur(25px);
+  width: 350px;
+  height: 350px;
   background-color: rgba(255, 0, 170, 0.4);
   top: 1300px;
   left: 15%;
@@ -132,6 +277,7 @@ onMounted(() => {
     border-radius: 50%;
     width: 700px;
     height: 700px;
+    transition: 200ms ease-out;
 }
 
 #bubble1t {

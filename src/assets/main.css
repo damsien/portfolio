@@ -30,3 +30,35 @@ body, #navbar {
   color: #70d9ff;
   background-color: #00b83d;
 }
+
+
+
+
+
+
+.link:hover {
+  color: #00b378;
+}
+:is(.dark .link:hover) {
+  color: #00ffaa;
+}
+
+.nodejs {
+  margin-top: 10px;
+}
+
+.item {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  padding: 12px;
+  margin: 10px;
+  display: inline-block;
+}
+
+:is(.dark .extern-icon) {
+  filter: invert();
+}
+:is(.dark .ada-lang) {
+  filter: invert();
+}
