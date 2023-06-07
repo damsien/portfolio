@@ -19,7 +19,7 @@
                 <a href="#welcome" class="button-nav
                     dark:text-slate-300 dark:hover:text-slate-200
                     text-slate-600 hover:text-slate-800
-                    sm:text-lg text-sm font-medium">Introduction</a>
+                    sm:text-lg text-sm 4xl:text-xl 5xl:text-2xl 6xl:text-3xl font-medium">Introduction</a>
                 <div class="dot"></div>
             </div>
             
@@ -27,7 +27,7 @@
                 <a href="#projects" class="button-nav
                     dark:text-slate-300 dark:hover:text-slate-200
                     text-slate-600 hover:text-slate-800
-                    sm:text-lg text-sm font-medium">Projects</a>
+                    sm:text-lg text-sm 4xl:text-xl 5xl:text-2xl 6xl:text-3xl font-medium">Projects</a>
                 <div class="dot"></div>
             </div>
             
@@ -35,14 +35,14 @@
                 <a href="#experience" class="button-nav
                     dark:text-slate-300 dark:hover:text-slate-200
                     text-slate-600 hover:text-slate-800
-                    sm:text-lg text-sm font-medium">Experience</a>
+                    sm:text-lg text-sm 4xl:text-xl 5xl:text-2xl 6xl:text-3xl font-medium">Experience</a>
                 <div class="dot"></div>
             </div>
 
             <div class="flex-auto fixed right-0 sm:mx-1 mx-0 my-1 sm:px-3 px-1 py-2">
                 <a id="contact-btn" href="#contact" class="button-nav
                     text-white py-1 px-2 rounded-md
-                    sm:text-lg text-sm font-semibold">Contact me</a>
+                    sm:text-lg text-sm 4xl:text-xl 5xl:text-2xl 6xl:text-3xl font-semibold">Contact me</a>
             </div>
         </div>
         
@@ -92,6 +92,18 @@
             width: 20px;
             height: 20px;
             transform: translate(-50%, -50%);
+    }
+}
+@media (min-width: 1700px) {
+    #logo {
+            width: 27px;
+            height: 27px;
+    }
+}
+@media (min-width: 2200px) {
+    #logo {
+            width: 35px;
+            height: 35px;
     }
 }
 

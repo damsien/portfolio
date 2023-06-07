@@ -87,7 +87,7 @@ import { onMounted } from 'vue'
     <div id="main-bg" class="dark:bg-gray-900 bg-gray-200 dark:text-white text-black">
       <div id="bubble" class="bstep0"></div>
 
-      <p id="project-title" class="lg:text-9xl text-7xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
+      <p id="project-title" class="6xl:text-11xl 4xl:text-10xl lg:text-9xl text-7xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
       
       <div class="overflow-hidden">
         <div id="blob"></div>
@@ -98,13 +98,13 @@ import { onMounted } from 'vue'
           <div class="sm:grid sm:grid-cols-2 top-44 flex flex-col-reverse">
             <div class="w-full">
               <div class="mx-auto w-5/6 mb-8 observe" data-step="2">
-                <p class="text-left text-lg font-semibold">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   Pixel War is an online game inspired by Reddit r/place. The principle is simple: put pixels on the map to form a drawing.
                 </p>
-                <p class="text-left text-lg font-semibold">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   The first session I launched welcomed 500 players for 150K pixels placed. The challenge was to ensure the state of the game in real time on all devices. The "real time" part is managed by Redis while the history of the game is stored in Mariadb.
                 </p>
-                <p class="text-left text-lg font-semibold">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   The stack of the site is quite classical with Nestjs for the api/backend and Vue for the frontend.
                 </p>
               </div>
@@ -125,26 +125,26 @@ import { onMounted } from 'vue'
 
                 <div class="lg:inline-grid lg:ms-8 grid xl:grid-cols-none grid-cols-2 mb-7 sm:mb-0 sm:top-4 xl:top-0">
                   <div class="w-full lg:mb-3">
-                    <img src="../assets/web.png" width="15px" class="inline-block extern-icon">
+                    <img src="../assets/web.png" class="inline-block extern-icon">
                     <a class="link" href="https://place.inpt.fr" target="_blank"> Open the game</a>
                   </div>
                   <div>
-                    <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+                    <img src="../assets/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-frontend" target="_blank"> Frontend repository</a><br>
 
-                    <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+                    <img src="../assets/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-backend" target="_blank"> Backend repository</a><br>
 
-                    <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+                    <img src="../assets/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-infra" target="_blank"> Helm chart repository</a><br>
                   </div>
                 </div>
               </div>
             </div>
             <div class="w-full sm:-top-14 mb-12">
-              <p class="text-5xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
-              <p class="text-xs text-center -top-14 sm:top-0">2022</p>
-              <img src="../assets/projects/pixelwar.png" class="mx-auto mt-4">
+              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
+              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
+              <img src="../assets/projects/pixelwar.png" class="mx-auto mt-4" id="pixel-war-img">
             </div>
           </div>
 
@@ -153,23 +153,23 @@ import { onMounted } from 'vue'
           <!-- Smartshuffle -->
           <div class="sm:grid sm:grid-cols-2">
             <div class="w-full mb-12">
-              <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
-              <p class="text-xs text-center -top-14 sm:top-0">2020</p>
+              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
+              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2020</p>
               <div class="text-center mt-4 observe" data-step="4">
-                <img width="175px" src="../assets/projects/smartshuffle1.gif" class="inline-block pe-1">
-                <img width="170px" src="../assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
+                <img id="sm-img1" src="../assets/projects/smartshuffle1.gif" class="inline-block pe-1">
+                <img id="sm-img2" src="../assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
               </div>
             </div>
             <div class="w-full sm:top-14 top-0">
               <div class="mx-auto w-5/6 mb-8">
-                <p class="text-left text-lg font-semibold">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   In the world of audio streaming, some music is only uploaded on certain platforms. How to create a playlist with music from different platforms? Smartshuffle answers this need. For now, it is possible to merge playlists from Spotify and Youtube.
                 </p>
-                <p class="text-left text-lg font-semibold observe" data-step="5">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="5">
                   The mobile application was entirely built with the Flutter framework. The challenge was to get to grips with this new way of designing a UI that moves away from classic mobile design frameworks such as React or Ionic.
                 </p>
                 <br>
-                <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+                <img src="../assets/github.png" class="inline-block extern-icon">
                 <a class="link" href="https://github.com/Yltaros/Smartshuffle" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
@@ -187,14 +187,14 @@ import { onMounted } from 'vue'
           <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse">
             <div class="w-full sm:top-14 top-0">
               <div class="mx-auto w-5/6 mb-8">
-                <p class="text-left text-lg font-semibold">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   Minja is a project realized with the help of 4 other friends. We created a mod for the game Minecraft. The technical challenge was to bring new game mechanics that were not coded in the game.
                 </p>
-                <p class="text-left text-lg font-semibold observe" data-step="8">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="8">
                   The project was carried out in a specific framework in which we used the agile method. The Jira tool helped us a lot in the management of our sprints.
                 </p>
                 <br>
-                <img src="../assets/github.png" width="15px" class="inline-block extern-icon">
+                <img src="../assets/github.png" class="inline-block extern-icon">
                 <a class="link" href="https://github.com/Yltaros/Minja" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
@@ -205,9 +205,9 @@ import { onMounted } from 'vue'
               </table>
             </div>
             <div class="w-full mb-12">
-              <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
-              <p class="text-xs text-center -top-14 sm:top-0">2022</p>
-              <img src="../assets/projects/minja.png" width="700px" class="mx-auto mt-4 observe" data-step="7">
+              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
+              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
+              <img src="../assets/projects/minja.png" id="minja-img" class="mx-auto mt-4 observe" data-step="7">
             </div>
           </div>
 
@@ -216,17 +216,17 @@ import { onMounted } from 'vue'
           <!-- Dato -->
           <div class="sm:grid sm:grid-cols-2">
             <div class="w-full mb-12">
-              <p class="text-5xl font-semibold text-center sm:mb-0 mb-16">Dato</p>
-              <p class="text-xs text-center -top-14 sm:top-0">2021</p>
-              <img src="../assets/projects/dato.png" width="700px" class="mx-auto mt-4 observe" data-step="10">
+              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Dato</p>
+              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2021</p>
+              <img src="../assets/projects/dato.png" id="dato-img" class="mx-auto mt-4 observe" data-step="10">
             </div>
             <div class="w-full sm:top-14 top-0">
               <div class="mx-auto w-5/6 mb-8">
-                <p class="text-left text-lg font-semibold">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   For this project realized with a friend. The idea was to create a programming language using a language we didn't like. At that time, we had no knowledge of language translation methods. The challenge was to find the most optimal way to process a piece of program written in "Dato".
                 </p>
                 <br>
-                <img src="../assets/github.png" width="15px" class="inline-block extern-icon observe" data-step="11">
+                <img src="../assets/github.png" class="inline-block extern-icon observe" data-step="11">
                 <a class="link" href="https://github.com/Yltaros/Dato" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
@@ -246,6 +246,56 @@ import { onMounted } from 'vue'
 </template>
 
 <style scoped>
+
+
+#dato-img {
+  width: 700px;
+}
+#minja-img {
+  width: 700px;
+}
+#sm-img1 {
+  width: 175px;
+}
+#sm-img2 {
+  width: 170px;
+}
+@media (min-width: 1700px) {
+  #dato-img {
+    width: 800px;
+  }
+  #minja-img {
+    width: 800px;
+  }
+  #sm-img1 {
+    width: 250px;
+  }
+  #sm-img2 {
+    width: 245px;
+  }
+  #pixel-war-img {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (min-width: 2200px) {
+  #dato-img {
+    width: 950px;
+  }
+  #minja-img {
+    width: 950px;
+  }
+  #sm-img1 {
+    width: 300px;
+  }
+  #sm-img2 {
+    width: 295px;
+  }
+  #pixel-war-img {
+    width: 700px;
+    height: 700px;
+  }
+}
 
 
 @media (min-width: 768px) {

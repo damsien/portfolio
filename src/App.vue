@@ -32,7 +32,7 @@ localStorage.removeItem('theme')
 
     <main id="content">
       <div id="projects"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
-      <Welcome id="welcome" class="welcome relative" msg="You did it!" />
+      <Welcome id="welcome" class="relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
       <Projects msg="You did it!" />
       <Experience />
@@ -52,8 +52,13 @@ localStorage.removeItem('theme')
   overflow: hidden;
   height: 600px;
   width: 100%;
-  top: 650px;
+  top: 645px;
   padding-top: 50px;
+}
+@media (min-width: 2200px) {
+  #projects {
+    top: 1250px;
+  }
 }
 
 #thefirstsep {

@@ -57,9 +57,9 @@ onMounted(() => {
         <div class="dark:bg-black bg-white dark:text-white text-black w-full">
 
             <div class="w-full h-0.5 dark:bg-gray-200 bg-gray-900"></div>
-            <div id="title" class="lg:h-80 h-64 pt-20 overflow-hidden">
+            <div id="title" class="6xl:h-96 lg:h-80 h-64 pt-20 overflow-hidden">
                 <div class="w-fit mx-auto z-10">
-                    <p class="lg:text-9xl text-7xl font-bold text-gray-800 dark:text-white">Experience</p>
+                    <p class="6xl:text-11xl 4xl:text-10xl lg:text-9xl text-7xl font-bold text-gray-800 dark:text-white">Experience</p>
                     <div id="exp-title-bar" class="mt-7 bg-gray-800 dark:bg-white h-2"></div>
                 </div>
                 <div>
@@ -81,8 +81,8 @@ onMounted(() => {
                 <div id="orange">
                   <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
                     <div class="col-span-3 sm:col-span-1">
-                      <p class="font-bold text-6xl sm:hidden text-center translate" data-speed="-0.05">2021-2024</p>
-                      <p class="font-bold lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.1">
+                      <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center translate" data-speed="-0.05">2021-2024</p>
+                      <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.1">
                         2021<span id="year-separator"></span>2024</p>
                       <div id="year-line" class="lg:block hidden translate" data-speed="0.1"></div>
                     </div>
@@ -92,19 +92,19 @@ onMounted(() => {
                         <p class="font-semibold text-xl w-56">First network and telecom company in France</p>
                       </div>
                     </div>
-                    <div class="col-span-3">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et nisi ac nibh vehicula porttitor vitae in ipsum. Proin efficitur hendrerit tellus at dictum. Donec congue leo eget fermentum hendrerit. Praesent convallis augue enim, quis hendrerit purus cursus eu. Ut non nulla ac ante ultrices ornare vitae at lacus. Mauris pulvinar metus vel libero mollis, ac sagittis est ornare. Sed varius ac lacus sit amet tristique. Mauris rutrum interdum leo, posuere luctus turpis pulvinar sit amet. Praesent bibendum vitae lectus ut ullamcorper.
+                    <div class="col-span-3 6xl:col-span-4">
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et nisi ac nibh vehicula porttitor vitae in ipsum. Proin efficitur hendrerit tellus at dictum. Donec congue leo eget fermentum hendrerit. Praesent convallis augue enim, quis hendrerit purus cursus eu. Ut non nulla ac ante ultrices ornare vitae at lacus. Mauris pulvinar metus vel libero mollis, ac sagittis est ornare. Sed varius ac lacus sit amet tristique. Mauris rutrum interdum leo, posuere luctus turpis pulvinar sit amet. Praesent bibendum vitae lectus ut ullamcorper.
 
 Duis nec sem tincidunt, finibus metus eu, ultricies sapien. Maecenas consequat sem id tempus facilisis. Fusce eget libero augue. Donec fermentum sapien nec lorem lacinia, in luctus est mattis. In at leo mi. Ut pellentesque nulla vitae ipsum suscipit, ac ornare purus scelerisque. Mauris ac venenatis metus. Sed eget quam ultricies, placerat magna vitae, dictum eros.
 
 Sed non malesuada eros, sit amet tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus vehicula metus ac urna feugiat mollis. Maecenas non sollicitudin ex, vitae vehicula enim. Curabitur placerat mattis fermentum. Suspendisse consectetur dolor ut dolor lobortis, id tincidunt massa tincidunt. Pellentesque ut magna at eros fringilla cursus. Fusce aliquet metus sed rutrum imperdiet. Morbi a elit id ligula bibendum aliquam. Morbi vel augue massa. In vel erat urna. Donec vitae eros pretium nisl venenatis ultricies. Suspendisse potenti. Nulla non rhoncus nisl. Donec sed nisi non tellus bibendum consectetur a nec massa. Nullam a justo eu enim suscipit sagittis.
                       </p>
                     </div>
-                    <div class="sm:col-span-2 col-span-3">
+                    <div class="sm:col-span-2 6xl:col-span-1 col-span-3">
                       <div class="mb-5 sm:block hidden">
                         <div class="flex translate" data-speed="-0.02">
-                          <img class="me-2 h-24 w-24" src="../assets/experience/orange.png">
-                          <p class="font-semibold text-xl w-52">First network and telecom company in France</p>
+                          <img class="me-2 h-24 w-24 4xl:w-32 4xl:h-32 6xl:w-36 6xl:h-36" src="../assets/experience/orange.png">
+                          <p class="font-semibold text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">First network and telecom company in France</p>
                         </div>
                       </div>
                       <div class="mx-auto">

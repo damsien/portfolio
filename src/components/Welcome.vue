@@ -114,10 +114,10 @@ import { onMounted } from 'vue'
 </script>
 
 <template>
-  <div class="dark:dark-background light-background">
+  <div id="welcome" class="dark:dark-background light-background">
 
 
-    <div id="bubbles" class="absolute w-full welcome overflow-hidden">
+    <div id="bubbles" class="h-full absolute w-full welcome overflow-hidden">
       <div id="bubble5"></div>
       <div id="bubble2"></div>
       <div id="bubble3"></div>
@@ -126,26 +126,26 @@ import { onMounted } from 'vue'
     </div>
     
     <div class="grid sm:grid-cols-2">
-      <div class="w-full top-1/3 h-72">
+      <div class="w-full top-1/3 6xl:pt-36 h-72">
         <div class="sm:float-right mx-auto text-left ps-8 sm:ps-0">
-          <p class="blend lg:text-9xl text-7xl font-bold">Welcome</p>
-          <p class="blend lg:text-5xl text-3xl font-semibold">to my portofolio</p>
+          <p class="blend 6xl:text-12xl 4xl:text-10xl lg:text-9xl text-7xl font-bold">Welcome</p>
+          <p class="blend 6xl:text-8xl 4xl:text-6xl lg:text-5xl text-3xl font-semibold">to my portofolio</p>
           <br><br>
-          <p class="blend lg:text-3xl text-xl font-bold">Hey! I'm Damien Dassieu</p>
+          <p class="blend 6xl:text-5xl 4xl:text-4xl lg:text-3xl text-xl font-bold">Hey! I'm Damien Dassieu</p>
 
           <div id="dev-container" class="top-8 bg-slate-800 rounded-md
                       outline outline-offset-1 outline-2 py-2 ps-2">
-            <p class="text-slate-400 inline font-roboto">$ </p>
-            <p id="developer" class="text-white inline font-roboto"></p>
+            <p class="6xl:text-2xl 4xl:text-lg text-slate-400 inline font-roboto">$ </p>
+            <p id="developer" class="6xl:text-2xl 4xl:text-lg text-white inline font-roboto"></p>
             <div id="underscore" class="inline-block bg-slate-400 ms-2 top-1"></div>
           </div>
           <div class="relative">
-            <div id="frontend" class="absolute opacity-0 text-lg">✨</div>
-            <div id="backend" class="absolute opacity-0 sm:text-lg text-sm dark:text-white text-black font-roboto"
+            <div id="frontend" class="absolute opacity-0 6xl:text-3xl text-lg">✨</div>
+            <div id="backend" class="absolute opacity-0 sm:text-lg text-sm 4xl:text-lg 6xl:text-2xl dark:text-white text-black font-roboto"
             >GET <a target="_blank" class="text-blue-600 font-semibold"
               href="https://www.damiendassieu.fr/api/v1/status">https://www.damiendassieu.fr/api/v1/status</a>
             </div>
-            <div id="devops" class="absolute opacity-0 text-lg">📦 🐋</div>
+            <div id="devops" class="absolute opacity-0 6xl:text-2xl text-lg">📦 🐋</div>
           </div>
 
         </div>
@@ -162,6 +162,16 @@ import { onMounted } from 'vue'
 
 <style scoped>
 
+
+#welcome {
+  height: 900px;
+}
+@media (min-width: 2200px) {
+  #welcome {
+    height: 1500px;
+  }
+}
+
 .blend {
     color: white;
     mix-blend-mode: difference;
@@ -174,6 +184,13 @@ import { onMounted } from 'vue'
   position: relative;
   width: 300px;
   height: 40px;
+}
+
+@media (min-width: 2200px) {
+  #dev-container {
+    width: 450px;
+    height: 50px;
+  }
 }
 
 #underscore {
