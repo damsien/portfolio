@@ -15,7 +15,7 @@
         style="border-bottom-width: 0.5px;">
 
         <div class="flex sm:ps-2 ps-8">
-            <div class="sm:mx-1 mx-0 my-1 sm:px-3px-1 py-2">
+            <div class="sm:mx-1 mx-0 my-1 sm:px-3px-1 py-2 hidden sm:block">
                 <a href="#welcome" class="button-nav
                     dark:text-slate-300 dark:hover:text-slate-200
                     text-slate-600 hover:text-slate-800
@@ -47,7 +47,9 @@
         </div>
         
         <div id="logo">
-            <img src="../assets/logo.png"/>
+            <a href="#welcome">
+                <img src="../assets/logo.png"/>
+            </a>
         </div>
 
     </nav>
@@ -69,10 +71,10 @@
 
 @keyframes contactshadow {
   0% {
-    box-shadow: 0px 0px 50px rgb(0, 255, 170);
+    box-shadow: 0px 0px 10px rgb(0, 255, 170);
   }
   100% {
-    box-shadow: 0px 0px 10px rgb(55, 228, 200);
+    box-shadow: 0px 0px 5px rgb(55, 228, 200);
   }
 }
 

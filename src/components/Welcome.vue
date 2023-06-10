@@ -114,7 +114,7 @@ import { onMounted } from 'vue'
 </script>
 
 <template>
-  <div id="welcome" class="dark:dark-background light-background">
+  <div id="welcome-section" class="dark:dark-background light-background">
 
 
     <div id="bubbles" class="h-full absolute w-full welcome overflow-hidden">
@@ -143,7 +143,7 @@ import { onMounted } from 'vue'
             <div id="frontend" class="absolute opacity-0 6xl:text-3xl text-lg">✨</div>
             <div id="backend" class="absolute opacity-0 sm:text-lg text-sm 4xl:text-lg 6xl:text-2xl dark:text-white text-black font-roboto"
             >GET <a target="_blank" class="text-blue-600 font-semibold"
-              href="https://www.damiendassieu.fr/api/v1/status">https://www.damiendassieu.fr/api/v1/status</a>
+              href="/api/v1/status">https://www.damiendassieu.fr/api/v1/status</a>
             </div>
             <div id="devops" class="absolute opacity-0 6xl:text-2xl text-lg">📦 🐋</div>
           </div>
@@ -163,11 +163,11 @@ import { onMounted } from 'vue'
 <style scoped>
 
 
-#welcome {
+#welcome-section {
   height: 900px;
 }
 @media (min-width: 2200px) {
-  #welcome {
+  #welcome-section {
     height: 1500px;
   }
 }

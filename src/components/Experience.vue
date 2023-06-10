@@ -28,7 +28,8 @@ onMounted(() => {
       if (element.style.transform != '') {
         translateX = element.style.transform.split('(')[1].split(',')[0];
       }
-      element.style.transform = `translate(${translateX}, ${scroll * parseFloat(speed)}px)`;
+      let adaptiveSpeed = (parseFloat(speed) * 1500) / window.innerWidth;
+      element.style.transform = `translate(${translateX}, ${scroll * adaptiveSpeed}px)`;
     });
   }));
   window.addEventListener('mousemove', ((e) => {
@@ -54,7 +55,7 @@ onMounted(() => {
 
 <template>
     <div>
-        <div class="dark:bg-black bg-white dark:text-white text-black w-full">
+        <div id="main-bg" class="dark:text-white text-black w-full">
 
             <div class="w-full h-0.5 dark:bg-gray-200 bg-gray-900"></div>
             <div id="title" class="6xl:h-96 lg:h-80 h-64 pt-20 overflow-hidden">
@@ -70,54 +71,357 @@ onMounted(() => {
             </div>
 
 
-            <div id="main-parallax" class="relative w-full" style="height: 2000px;">
-              <div class="absolute w-full overflow-hidden" style="height: 2000px;">
-                <div id="bubble1b" class="bubble translate" data-speed="-1" data-mspeed="0.2"></div>
-                <div id="bubble2b" class="bubble translate" data-speed="-1.2" data-mspeed="0.7"></div>
-                <div id="bubble3b" class="bubble translate" data-speed="-1" data-mspeed="0.25"></div>
+            <div id="main-parallax" class="relative w-full overflow-y-hidden">
+              <div class="absolute w-full overflow-hidden" style="height: 2500px;">
+                <div id="bubble1b" class="bubble translate" data-speed="-0.5" data-mspeed="0.2"></div>
+                <div id="bubble2b" class="bubble translate" data-speed="-0.7" data-mspeed="0.7"></div>
+                <div id="bubble3b" class="bubble translate" data-speed="-0.5" data-mspeed="0.25"></div>
+                <div id="bubble4b" class="bubble translate" data-speed="-0.5" data-mspeed="0.2"></div>
+                <div id="bubble5b" class="bubble translate" data-speed="-0.7" data-mspeed="0.7"></div>
+                <div id="bubble6b" class="bubble translate" data-speed="-0.5" data-mspeed="0.25"></div>
               </div>
-              
               <div class="pt-16 px-10 lg:px-20">
-                <div id="orange">
+              
+                <div id="knu">
+                  <div class="grid sm:grid-cols-12 grid-cols-3 h-full gap-8">
+                    <div class="col-span-3 block sm:hidden">
+                        <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2023</p>
+                    </div>
+                    <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
+                      <div class="flex sm:hidden">
+                        <img class="me-2 h-24 w-24" src="../assets/experience/knu.png">
+                        <p class="font-semibold text-xl w-56">Kyungpook national university</p>
+                      </div>
+                      <div class="mb-5 sm:block hidden float-right">
+                        <div class="flex">
+                          <p class="font-semibold text-right pe-5 text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">Kyungpook national university</p>
+                          <img class="me-2 h-24 w-24 4xl:w-32 4xl:h-32 6xl:w-36 6xl:h-36" src="../assets/experience/knu.png">
+                        </div>
+                      </div>
+                      <div class="mx-auto float-right sm:block hidden">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-span-3 sm:col-span-6 6xl:col-span-8">
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        Finally, I was able to exchange ideas with cloud computing organizations.
+                      </p>
+                    </div>
+                    <div class="col-span-3 6xl:col-span-2">
+                      <div class="mx-auto float-right sm:hidden block">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <div>
+                        <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block" data-speed="0.1">
+                          2023</p>
+                        <!-- <div id="year-line" class="year-line-left xl:block hidden" data-speed="0.1"></div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              
+                <div id="orange" class="mt-36">
                   <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
                     <div class="col-span-3 sm:col-span-1">
-                      <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center translate" data-speed="-0.05">2021-2024</p>
-                      <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.1">
-                        2021<span id="year-separator"></span>2024</p>
-                      <div id="year-line" class="lg:block hidden translate" data-speed="0.1"></div>
+                      <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2021-2024</p>
+                      <div style="top: -150px">
+                        <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.35">
+                          2024<span id="year-separator"></span>2021</p>
+                        <div id="year-line" class="year-line-right xl:block hidden translate" data-speed="0.35"></div>
+                      </div>
                     </div>
                     <div class="block sm:hidden col-span-3 mx-auto">
                       <div class="flex">
                         <img class="me-2 h-24 w-24" src="../assets/experience/orange.png">
-                        <p class="font-semibold text-xl w-56">First network and telecom company in France</p>
+                        <p class="font-semibold text-xl w-56">Orange - First network and telecom company in France</p>
                       </div>
                     </div>
                     <div class="col-span-3 6xl:col-span-4">
-                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et nisi ac nibh vehicula porttitor vitae in ipsum. Proin efficitur hendrerit tellus at dictum. Donec congue leo eget fermentum hendrerit. Praesent convallis augue enim, quis hendrerit purus cursus eu. Ut non nulla ac ante ultrices ornare vitae at lacus. Mauris pulvinar metus vel libero mollis, ac sagittis est ornare. Sed varius ac lacus sit amet tristique. Mauris rutrum interdum leo, posuere luctus turpis pulvinar sit amet. Praesent bibendum vitae lectus ut ullamcorper.
-
-Duis nec sem tincidunt, finibus metus eu, ultricies sapien. Maecenas consequat sem id tempus facilisis. Fusce eget libero augue. Donec fermentum sapien nec lorem lacinia, in luctus est mattis. In at leo mi. Ut pellentesque nulla vitae ipsum suscipit, ac ornare purus scelerisque. Mauris ac venenatis metus. Sed eget quam ultricies, placerat magna vitae, dictum eros.
-
-Sed non malesuada eros, sit amet tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus vehicula metus ac urna feugiat mollis. Maecenas non sollicitudin ex, vitae vehicula enim. Curabitur placerat mattis fermentum. Suspendisse consectetur dolor ut dolor lobortis, id tincidunt massa tincidunt. Pellentesque ut magna at eros fringilla cursus. Fusce aliquet metus sed rutrum imperdiet. Morbi a elit id ligula bibendum aliquam. Morbi vel augue massa. In vel erat urna. Donec vitae eros pretium nisl venenatis ultricies. Suspendisse potenti. Nulla non rhoncus nisl. Donec sed nisi non tellus bibendum consectetur a nec massa. Nullam a justo eu enim suscipit sagittis.
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        Finally, I was able to exchange ideas with cloud computing organizations.
                       </p>
                     </div>
                     <div class="sm:col-span-2 6xl:col-span-1 col-span-3">
                       <div class="mb-5 sm:block hidden">
-                        <div class="flex translate" data-speed="-0.02">
+                        <div class="flex">
                           <img class="me-2 h-24 w-24 4xl:w-32 4xl:h-32 6xl:w-36 6xl:h-36" src="../assets/experience/orange.png">
-                          <p class="font-semibold text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">First network and telecom company in France</p>
+                          <p class="font-semibold text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">Orange - First network and telecom company in France</p>
                         </div>
                       </div>
                       <div class="mx-auto">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/typescript.png">Typescript</td>
-                            <td class="item"><img src="../assets/icons/nodejs-light.png" width="100px" class="pt-1 nodejs pb-3">Nodejs</td>
-                            <td class="item"><img src="../assets/icons/mariadb.svg" class="pt-2 pb-4">Mariadb</td>
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
                           </tr>
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/vue.png" class="pt-1">Vue</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="70px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/redis.svg" class="pt-1 pb-1">Redis</td>
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div id="enseeiht" class="mt-20">
+                  <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
+                    <div class="col-span-3 sm:col-span-1">
+
+                    </div>
+                    <div class="block sm:hidden col-span-3 mx-auto">
+                      <div class="flex">
+                        <img class="me-2 h-20 w-28" src="../assets/experience/enseeiht.png">
+                        <p class="font-semibold text-xl w-56">ENSEEIHT - Computer science engineering school</p>
+                      </div>
+                    </div>
+                    <div class="col-span-3 6xl:col-span-4">
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        Finally, I was able to exchange ideas with cloud computing organizations.
+                      </p>
+                    </div>
+                    <div class="sm:col-span-2 6xl:col-span-1 col-span-3">
+                      <div class="mb-5 sm:block hidden">
+                        <div class="flex">
+                          <img class="me-2 h-20 w-28" src="../assets/experience/enseeiht.png">
+                          <p class="font-semibold text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">ENSEEIHT - Computer science engineering school</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              
+                <div id="wikicampers" class="mt-36">
+                  <div class="grid sm:grid-cols-12 grid-cols-3 h-full gap-8">
+                    <div class="col-span-3 block sm:hidden">
+                        <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2019-2021</p>
+                    </div>
+                    <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
+                      <div class="flex sm:hidden">
+                        <img class="me-2 h-24 w-24" src="../assets/experience/wikicampers.webp">
+                        <p class="font-semibold text-xl w-56">First motorhome rental company in France</p>
+                      </div>
+                      <div class="mb-5 sm:block hidden float-right">
+                        <div class="flex">
+                          <p class="font-semibold text-right pe-5 text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">First motorhome rental company in France</p>
+                          <img class="me-2 h-24 w-24 4xl:w-32 4xl:h-32 6xl:w-36 6xl:h-36" src="../assets/experience/wikicampers.webp">
+                        </div>
+                      </div>
+                      <div class="mx-auto float-right sm:block hidden">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-span-3 sm:col-span-6 6xl:col-span-8">
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        Finally, I was able to exchange ideas with cloud computing organizations.
+                      </p>
+                    </div>
+                    <div class="col-span-3 6xl:col-span-2">
+                      <div class="mx-auto float-right sm:hidden block">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <div style="top: -600px">
+                        <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.45">
+                          2021<span id="year-separator"></span>2019</p>
+                        <div id="year-line" class="year-line-left xl:block hidden translate" data-speed="0.45"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="iut" class="mt-20">
+                  <div class="grid sm:grid-cols-12 grid-cols-3 h-full gap-8">
+                    <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
+                      <div class="flex sm:hidden">
+                        <img class="me-2 h-18 w-24" src="../assets/experience/iut.png">
+                        <p class="font-semibold text-xl w-56">University Institute of Technology</p>
+                      </div>
+                      <div class="mb-5 sm:block hidden float-right">
+                        <div class="flex">
+                          <p class="font-semibold text-right pe-5 text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">University Institute of Technology</p>
+                          <img class="me-2 h-18 w-24" src="../assets/experience/iut.png">
+                        </div>
+                      </div>
+                      <div class="mx-auto float-right sm:block hidden">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-span-3 sm:col-span-6 6xl:col-span-8">
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        Finally, I was able to exchange ideas with cloud computing organizations.
+                      </p>
+                    </div>
+                    <div class="col-span-3 6xl:col-span-2">
+                      <div class="mx-auto float-right sm:hidden block">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              
+                <div id="insa" class="mt-36">
+                  <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
+                    <div class="col-span-3 sm:col-span-1">
+                      <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2019</p>
+                      <div>
+                        <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block" data-speed="0.1">
+                          2019</p>
+                        <div id="year-line" class="year-line-right xl:block hidden" data-speed="0.1"></div>
+                      </div>
+                    </div>
+                    <div class="block sm:hidden col-span-3 mx-auto">
+                      <div class="flex">
+                        <img class="me-2 h-18 w-24" src="../assets/experience/insa.png">
+                        <p class="font-semibold text-xl w-56">General engineering school</p>
+                      </div>
+                    </div>
+                    <div class="col-span-3 6xl:col-span-4">
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
+                      </p>
+                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
+                        Finally, I was able to exchange ideas with cloud computing organizations.
+                      </p>
+                    </div>
+                    <div class="sm:col-span-2 6xl:col-span-1 col-span-3">
+                      <div class="mb-5 sm:block hidden">
+                        <div class="flex">
+                          <img class="me-2 h-18 w-24" src="../assets/experience/insa.png">
+                          <p class="font-semibold text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">General engineering school</p>
+                        </div>
+                      </div>
+                      <div class="mx-auto">
+                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
+                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
                           </tr>
                         </table>
                       </div>
@@ -194,14 +498,26 @@ Sed non malesuada eros, sit amet tincidunt purus. Interdum et malesuada fames ac
 }
 
 
+.year-line-right {
+  float: right;
+  right: 15px;
+}
+.year-line-left {
+  float: left;
+  left: -15px;
+}
+
 #year-line {
   position: relative;
-  float: right;
   top: 20px;
-  right: 15px;
   background-color: rgba(255, 255, 255, 0.511);
   height: 100px;
   width: 0.5px;
+}
+@media (min-width: 2200px) {
+  #year-line {
+    height: 200px;
+  }
 }
 
 :is(.dark #year-separator) {
@@ -270,6 +586,33 @@ Sed non malesuada eros, sit amet tincidunt purus. Interdum et malesuada fames ac
   left: 15%;
 }
 
+#bubble4b {
+  filter: blur(20px);
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 255, 255, 0.6);
+  top: 1750px;
+  left: 20%;
+}
+
+#bubble5b {
+  filter: blur(50px);
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 0, 170, 0.4);
+  top: 2200px;
+  left: 60%;
+}
+
+#bubble6b {
+  filter: blur(25px);
+  width: 350px;
+  height: 350px;
+  background-color: rgba(0, 255, 102, 0.626);
+  top: 2600px;
+  left: 15%;
+}
+
 
 .bubble {
     position: absolute;
@@ -333,6 +676,13 @@ Sed non malesuada eros, sit amet tincidunt purus. Interdum et malesuada fames ac
     left: 65%;
     top: 10%;
   }
+}
+
+#main-bg {
+  background: linear-gradient(180deg, rgba(232,230,255,1) 0%, rgba(255,255,255,1) 50%);
+}
+:is(.dark #main-bg) {
+  background: linear-gradient(180deg, rgba(3,0,47,1) 0%, rgba(0,0,0,1) 50%);
 }
 
 

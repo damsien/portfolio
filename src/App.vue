@@ -26,13 +26,13 @@ localStorage.removeItem('theme')
 <template>
   <div>
 
-    <header class="h-12 z-40 dark:bg-black bg-white">
+    <header id="welcome" class="h-12 z-40 dark:bg-black bg-white">
       <Navbar id="navbar" class="fixed w-full" />
     </header>
 
-    <main id="content">
+    <main>
       <div id="projects"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
-      <Welcome id="welcome" class="relative" msg="You did it!" />
+      <Welcome class="relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
       <Projects msg="You did it!" />
       <Experience />
