@@ -72,7 +72,7 @@ onMounted(() => {
 
 
             <div id="main-parallax" class="relative w-full overflow-y-hidden">
-              <div class="absolute w-full overflow-hidden" style="height: 2500px;">
+              <div class="absolute w-full overflow-hidden" style="height: 10000px;">
                 <div id="bubble1b" class="bubble translate" data-speed="-0.5" data-mspeed="0.2"></div>
                 <div id="bubble2b" class="bubble translate" data-speed="-0.7" data-mspeed="0.7"></div>
                 <div id="bubble3b" class="bubble translate" data-speed="-0.5" data-mspeed="0.25"></div>
@@ -88,7 +88,7 @@ onMounted(() => {
                         <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2023</p>
                     </div>
                     <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
-                      <div class="flex sm:hidden">
+                      <div class="flex sm:hidden mx-auto w-fit">
                         <img class="me-2 h-24 w-24" src="../assets/experience/knu.png">
                         <p class="font-semibold text-xl w-56">Kyungpook national university</p>
                       </div>
@@ -99,7 +99,7 @@ onMounted(() => {
                         </div>
                       </div>
                     </div>
-                    <div class="col-span-3 sm:col-span-6 6xl:col-span-8">
+                    <div class="col-span-3 sm:col-span-6 6xl:col-span-8 font-roboto">
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
                         As part of my university exchange semester, I went to Kyungpook National University in South Korea.
                       </p>
@@ -123,7 +123,7 @@ onMounted(() => {
                   <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
                     <div class="col-span-3 sm:col-span-1">
                       <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2021-2024</p>
-                      <div style="top: -100px">
+                      <div id="paral1">
                         <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.35">
                           2024<span id="year-separator"></span>2021</p>
                         <div id="year-line" class="year-line-right xl:block hidden translate" data-speed="0.35"></div>
@@ -223,7 +223,7 @@ onMounted(() => {
                         <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2019-2021</p>
                     </div>
                     <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
-                      <div class="flex sm:hidden">
+                      <div class="flex sm:hidden mx-auto w-fit">
                         <img class="me-2 h-24 w-24" src="../assets/experience/wikicampers.webp">
                         <p class="font-semibold text-xl w-56">Wikicampers - First motorhome rental company in France</p>
                       </div>
@@ -252,7 +252,7 @@ onMounted(() => {
                       </p>
                     </div>
                     <div class="col-span-3 6xl:col-span-2">
-                      <div class="mx-auto float-right sm:hidden block">
+                      <div class="mx-auto sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
                             <td class="item"><img src="../assets/icons/symfony.png">Symfony</td>
@@ -262,10 +262,10 @@ onMounted(() => {
                         </table>
                       </div>
 
-                      <div style="top: -490px">
-                        <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.45">
+                      <div id="paral2">
+                        <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.4">
                           2021<span id="year-separator"></span>2019</p>
-                        <div id="year-line" class="year-line-left xl:block hidden translate" data-speed="0.45"></div>
+                        <div id="year-line" class="year-line-left xl:block hidden translate" data-speed="0.4"></div>
                       </div>
                     </div>
                   </div>
@@ -274,7 +274,7 @@ onMounted(() => {
                 <div id="iut" class="mt-20">
                   <div class="grid sm:grid-cols-12 grid-cols-3 h-full gap-8">
                     <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
-                      <div class="flex sm:hidden">
+                      <div class="flex sm:hidden mx-auto w-fit">
                         <img class="me-2 h-18 w-24" src="../assets/experience/iut.png">
                         <p class="font-semibold text-xl w-56">University Institute of Technology</p>
                       </div>
@@ -303,7 +303,7 @@ onMounted(() => {
                       </p>
                     </div>
                     <div class="col-span-3 6xl:col-span-2">
-                      <div class="mx-auto float-right sm:hidden block">
+                      <div class="mx-auto sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
                             <td class="item"><img src="../assets/icons/java.png">Java</td>
@@ -317,7 +317,7 @@ onMounted(() => {
                 </div>
                 
               
-                <div id="insa" class="mt-36">
+                <div id="insa" class="mt-36 mb-20">
                   <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
                     <div class="col-span-3 sm:col-span-1">
                       <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2019</p>
@@ -361,6 +361,65 @@ onMounted(() => {
 
 
 <style scoped>
+
+
+#paral1 {
+  top: -260px;
+}
+@media (min-width: 900px) {
+  #paral1 {
+    top: -220px;
+  }
+}
+@media (min-width: 1000px) {
+  #paral1 {
+    top: -160px;
+  }
+}
+@media (min-width: 1150px) {
+  #paral1 {
+    top: -140px;
+  }
+}
+@media (min-width: 1300px) {
+  #paral1 {
+    top: -100px;
+  }
+}
+@media (min-width: 1800px) {
+  #paral1 {
+    top: -50px;
+  }
+}
+
+#paral2 {
+  top: -1150px;
+}
+@media (min-width: 900px) {
+  #paral2 {
+    top: -920px;
+  }
+}
+@media (min-width: 1000px) {
+  #paral2 {
+    top: -680px;
+  }
+}
+@media (min-width: 1150px) {
+  #paral2 {
+    top: -590px;
+  }
+}
+@media (min-width: 1300px) {
+  #paral2 {
+    top: -490px;
+  }
+}
+@media (min-width: 2200px) {
+  #paral2 {
+    top: -250px;
+  }
+}
 
 
 

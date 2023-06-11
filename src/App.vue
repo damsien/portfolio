@@ -4,6 +4,8 @@ import Welcome from './components/Welcome.vue'
 import Navbar from './components/Navbar.vue'
 import './assets/tailwind.css'
 import Experience from './components/Experience.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -24,18 +26,20 @@ localStorage.removeItem('theme')
 </script>
 
 <template>
-  <div>
+  <div class="antialiased">
 
     <header id="welcome" class="h-12 z-40 dark:bg-black bg-white">
       <Navbar id="navbar" class="fixed w-full" />
     </header>
 
-    <main>
+    <main class="font-manrope">
       <div id="projects"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
       <Welcome class="relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
       <Projects msg="You did it!" />
       <Experience />
+      <Contact />
+      <Footer />
     </main>
 
   </div>

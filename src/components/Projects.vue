@@ -5,9 +5,9 @@ import { onMounted } from 'vue'
     msg: string
   }>()
 
-  onMounted(() => {
+  function nodeSwitch() {
     const nodejs = document.querySelectorAll('img.nodejs');
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (document.documentElement.classList.contains('dark')) {
       nodejs.forEach(n => {
         // @ts-ignore
         n.src = '/src/assets/icons/nodejs-dark.png';
@@ -18,7 +18,10 @@ import { onMounted } from 'vue'
         n.src = '/src/assets/icons/nodejs-light.png';
       });
     }
+  }
 
+  onMounted(() => {
+    nodeSwitch()
 
     const bubble = document.querySelector('#bubble');
     const observer = new IntersectionObserver((entries) => {

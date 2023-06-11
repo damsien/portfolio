@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'dm': ['"DM sans"', 'sans-serif'],
-        'karla': ['Karla', 'sans-serif'],
-        'roboto': ['"Roboto Mono"', 'monospace']
+        'roboto': ['"Roboto Mono"', 'sans-serif'],
+        // 'dm': ['"DM sans"', 'sans-serif'],
+        // 'karla': ['Karla', 'sans-serif'],
+        'space': ['"Space Mono"', 'monospace']
       },
       screens: {
         '3xl': '1600px',

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 60) {
@@ -7,6 +9,68 @@
             document.getElementById('navbar')?.classList.remove('dark:bg-slate-800/70 bg-slate-50/70');
         }
     });
+
+    onMounted(() => {
+
+        if (document.documentElement.classList.contains('dark')) {
+            document.getElementById('moon')?.classList.add('opacity-0');
+            document.getElementById('sun')?.classList.add('opacity-100');
+            //@ts-ignore
+            document.getElementById('sun').style.filter = 'invert()';
+        } else {
+            document.getElementById('moon')?.classList.add('opacity-100');
+            document.getElementById('sun')?.classList.add('opacity-0');
+        }
+
+    })
+
+    //@ts-ignore
+    function toggle(e) {
+        if (document.documentElement.classList.contains('dark')) {
+            //@ts-ignore
+            document.getElementById('sun').style.transform = 'rotate(360deg)'
+            document.getElementById('sun')?.classList.remove('opacity-100');
+            document.getElementById('sun')?.classList.add('opacity-50');
+            //@ts-ignore
+            document.getElementById('sun').style.filter = 'none';
+            document.getElementById('sun')?.classList.remove('opacity-50');
+            document.getElementById('sun')?.classList.add('opacity-0');
+            //@ts-ignore
+            document.getElementById('sun').style.transform = 'rotate(0deg)'
+
+            document.getElementById('moon')?.classList.remove('opacity-0');
+            document.getElementById('moon')?.classList.add('opacity-50');
+            //@ts-ignore
+            document.getElementById('moon').style.filter = 'none';
+            document.getElementById('moon')?.classList.remove('opacity-50');
+            document.getElementById('moon')?.classList.add('opacity-100');
+            //@ts-ignore
+            document.getElementById('moon').style.transform = 'rotate(180deg)'
+
+            document.documentElement.classList.remove('dark');
+        } else {
+            //@ts-ignore
+            document.getElementById('moon').style.transform = 'rotate(0deg)'
+            document.getElementById('moon')?.classList.remove('opacity-100');
+            document.getElementById('moon')?.classList.add('opacity-50');
+            //@ts-ignore
+            document.getElementById('moon').style.filter = 'invert()';
+            document.getElementById('moon')?.classList.remove('opacity-50');
+            document.getElementById('moon')?.classList.add('opacity-0');
+
+            document.getElementById('sun')?.classList.remove('opacity-0');
+            document.getElementById('sun')?.classList.add('opacity-50');
+            //@ts-ignore
+            document.getElementById('sun').style.filter = 'invert()';
+            document.getElementById('sun')?.classList.remove('opacity-50');
+            document.getElementById('sun')?.classList.add('opacity-100');
+            //@ts-ignore
+            document.getElementById('sun').style.transform = 'rotate(180deg)'
+
+            document.documentElement.classList.add('dark');
+        }
+    }
+
 </script>
 
 <template>
@@ -39,6 +103,13 @@
                 <div class="dot"></div>
             </div>
 
+            <div id="toggle" class="flex-auto fixed right-0 mt-2.5 sm:mt-3 me-28 sm:me-36 3xl:me-44 6xl:me-52">
+                <button @click="toggle">
+                    <img id="moon" class="dark-toggle mt-1 ms-1 absolute" src="../assets/icons/moon.svg" />
+                    <img id="sun" class="dark-toggle relative" src="../assets/icons/sun.svg" />
+                </button>
+            </div>
+
             <div class="flex-auto fixed right-0 sm:mx-1 mx-0 my-1 sm:px-3 px-1 py-2">
                 <a id="contact-btn" href="#contact" class="button-nav
                     text-white py-1 px-2 rounded-md
@@ -57,6 +128,20 @@
 </template>
 
 <style scoped>
+
+#moon {
+    transform: rotate(-180deg);
+    width: 1.3rem;
+}
+#sun {
+    transform: rotate(0deg);
+    width: 1.8rem;
+}
+
+.dark-toggle {
+    transition-timing-function: cubic-bezier(.84,-0.01,.21,1) !important;
+    transition-duration: 300ms !important;
+}
 
 #contact-btn {
     background-position: left 0% bottom 0%;
@@ -139,5 +224,8 @@
     transform: scale(1);
   }
 }
+
+
+/*      DARK MODE       */
 
 </style>

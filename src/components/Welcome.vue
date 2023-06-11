@@ -135,13 +135,13 @@ import { onMounted } from 'vue'
 
           <div id="dev-container" class="top-8 bg-slate-800 rounded-md
                       outline outline-offset-1 outline-2 py-2 ps-2">
-            <p class="6xl:text-2xl 4xl:text-lg text-slate-400 inline font-roboto">$ </p>
-            <p id="developer" class="6xl:text-2xl 4xl:text-lg text-white inline font-roboto"></p>
+            <p class="6xl:text-2xl 4xl:text-lg text-slate-400 inline font-space">$ </p>
+            <p id="developer" class="6xl:text-2xl 4xl:text-lg text-white inline font-space"></p>
             <div id="underscore" class="inline-block bg-slate-400 ms-2 top-1"></div>
           </div>
           <div class="relative">
             <div id="frontend" class="absolute opacity-0 6xl:text-3xl text-lg">✨</div>
-            <div id="backend" class="absolute opacity-0 sm:text-lg text-sm 4xl:text-lg 6xl:text-2xl dark:text-white text-black font-roboto"
+            <div id="backend" class="absolute opacity-0 sm:text-lg text-sm 4xl:text-lg 6xl:text-2xl dark:text-white text-black font-space"
             >GET <a target="_blank" class="text-blue-600 font-semibold"
               href="/api/v1/status">https://www.damiendassieu.fr/api/v1/status</a>
             </div>

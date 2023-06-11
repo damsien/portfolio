@@ -9,7 +9,10 @@
 body, #navbar {
   max-width: 3100px;
   margin: auto auto;
-  transition: 500ms forwards;
+}
+
+#navbar {
+  /* transition: 500ms forwards; */
 }
 
 

@@ -62,12 +62,44 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
+  /* transition: color 0.5s, background-color 0.5s; */
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+  font-family: 'Manrope', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/manrope/Manrope-Regular.ttf') format('truetype'); /* Adjust the path accordingly */
+  /* Add more src lines for other font weights/styles if available */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/manrope/Manrope-ExtraBold.ttf') format('truetype'); /* Adjust the path accordingly */
+  /* Add more src lines for other font weights/styles if available */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/manrope/Manrope-SemiBold.ttf') format('truetype'); /* Adjust the path accordingly */
+  /* Add more src lines for other font weights/styles if available */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/manrope/Manrope-Medium.ttf') format('truetype'); /* Adjust the path accordingly */
+  /* Add more src lines for other font weights/styles if available */
+  font-weight: 600;
+  font-style: normal;
 }
