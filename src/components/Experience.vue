@@ -98,47 +98,16 @@ onMounted(() => {
                           <img class="me-2 h-24 w-24 4xl:w-32 4xl:h-32 6xl:w-36 6xl:h-36" src="../assets/experience/knu.png">
                         </div>
                       </div>
-                      <div class="mx-auto float-right sm:block hidden">
-                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
-                          </tr>
-                        </table>
-                      </div>
                     </div>
                     <div class="col-span-3 sm:col-span-6 6xl:col-span-8">
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                        As part of my university exchange semester, I went to Kyungpook National University in South Korea.
                       </p>
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
-                      </p>
-                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        Finally, I was able to exchange ideas with cloud computing organizations.
+                        I continued to study IT, even though the main objective was to immerse myself in the local culture.
                       </p>
                     </div>
                     <div class="col-span-3 6xl:col-span-2">
-                      <div class="mx-auto float-right sm:hidden block">
-                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
-                          </tr>
-                        </table>
-                      </div>
 
                       <div>
                         <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block" data-speed="0.1">
@@ -154,7 +123,7 @@ onMounted(() => {
                   <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
                     <div class="col-span-3 sm:col-span-1">
                       <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2021-2024</p>
-                      <div style="top: -150px">
+                      <div style="top: -100px">
                         <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.35">
                           2024<span id="year-separator"></span>2021</p>
                         <div id="year-line" class="year-line-right xl:block hidden translate" data-speed="0.35"></div>
@@ -216,13 +185,15 @@ onMounted(() => {
                     </div>
                     <div class="col-span-3 6xl:col-span-4">
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                        These 3 years at ENSEEIHT enabled me to deepen my knowledge of Computer Science, covering all levels (from assembler to application construction). 
                       </p>
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
+                        For example, I learned how to create a programming language using language translation methods. I also deepened my understanding of concurrency in information systems.
                       </p>
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        Finally, I was able to exchange ideas with cloud computing organizations.
+                        Finally, I discovered and applied the principles and workings of networking. In particular, I set up a 5G antenna. I also created an Autonomous System (diagram available 
+                        <u><a class="link" target="_blank" href="https://viewer.diagrams.net/index.html?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Network%20project#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D14oxYKo_yowgQz7ftkVEr3M5HAFPmyzqn%26export%3Ddownload*">here</a>
+                        </u>) using the OSPF and BGP protocols.
                       </p>
                     </div>
                     <div class="sm:col-span-2 6xl:col-span-1 col-span-3">
@@ -235,14 +206,9 @@ onMounted(() => {
                       <div class="mx-auto">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                            <td class="item"><img src="../assets/icons/java.png">Java</td>
+                            <td class="item"><img src="../assets/icons/asm.png" width="50px">Assembly</td>
+                            <td class="item"><img src="../assets/icons/ocaml.png" width="50px">Ocaml</td>
                           </tr>
                         </table>
                       </div>
@@ -259,57 +225,44 @@ onMounted(() => {
                     <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
                       <div class="flex sm:hidden">
                         <img class="me-2 h-24 w-24" src="../assets/experience/wikicampers.webp">
-                        <p class="font-semibold text-xl w-56">First motorhome rental company in France</p>
+                        <p class="font-semibold text-xl w-56">Wikicampers - First motorhome rental company in France</p>
                       </div>
                       <div class="mb-5 sm:block hidden float-right">
                         <div class="flex">
-                          <p class="font-semibold text-right pe-5 text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">First motorhome rental company in France</p>
+                          <p class="font-semibold text-right pe-5 text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">Wikicampers - First motorhome rental company in France</p>
                           <img class="me-2 h-24 w-24 4xl:w-32 4xl:h-32 6xl:w-36 6xl:h-36" src="../assets/experience/wikicampers.webp">
                         </div>
                       </div>
                       <div class="mx-auto float-right sm:block hidden">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                            <td class="item"><img src="../assets/icons/symfony.png" class="invert-icon">Symfony</td>
+                            <td class="item"><img src="../assets/icons/php.png" width="70px">PHP</td>
+                            <td class="item"><img src="../assets/icons/ionic.png" width="60px">Ionic</td>
                           </tr>
                         </table>
                       </div>
                     </div>
                     <div class="col-span-3 sm:col-span-6 6xl:col-span-8">
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                        For my first internship, I worked for a young start-up. Its aim is to put people in touch with each other to rent motorhomes. 
                       </p>
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
-                      </p>
-                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        Finally, I was able to exchange ideas with cloud computing organizations.
+                        My role was to help develop the website and application.
                       </p>
                     </div>
                     <div class="col-span-3 6xl:col-span-2">
                       <div class="mx-auto float-right sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                            <td class="item"><img src="../assets/icons/symfony.png">Symfony</td>
+                            <td class="item"><img src="../assets/icons/php.png" width="70px">PHP</td>
+                            <td class="item"><img src="../assets/icons/ionic.png" width="60px">Ionic</td>
                           </tr>
                         </table>
                       </div>
 
-                      <div style="top: -600px">
+                      <div style="top: -490px">
                         <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.45">
                           2021<span id="year-separator"></span>2019</p>
                         <div id="year-line" class="year-line-left xl:block hidden translate" data-speed="0.45"></div>
@@ -334,41 +287,28 @@ onMounted(() => {
                       <div class="mx-auto float-right sm:block hidden">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                            <td class="item"><img src="../assets/icons/java.png">Java</td>
+                            <td class="item"><img src="../assets/icons/python.png" width="50px">Python</td>
+                            <td class="item"><img src="../assets/icons/c.png" width="50px">C</td>
                           </tr>
                         </table>
                       </div>
                     </div>
                     <div class="col-span-3 sm:col-span-6 6xl:col-span-8">
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                        I studied IT for two years in this IUT. It enabled me to acquire the fundamentals of information systems. 
                       </p>
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
-                      </p>
-                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        Finally, I was able to exchange ideas with cloud computing organizations.
+                        I did a lot of hands-on work on real projects with real customers.
                       </p>
                     </div>
                     <div class="col-span-3 6xl:col-span-2">
                       <div class="mx-auto float-right sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                            <td class="item"><img src="../assets/icons/java.png">Java</td>
+                            <td class="item"><img src="../assets/icons/python.png" width="50px">Python</td>
+                            <td class="item"><img src="../assets/icons/c.png" width="50px">C</td>
                           </tr>
                         </table>
                       </div>
@@ -395,13 +335,10 @@ onMounted(() => {
                     </div>
                     <div class="col-span-3 6xl:col-span-4">
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I had the opportunity to work for Orange. My main objective was to set up and manage several Kubernetes clusters for projects with different needs. I explored the automation of cluster creation using a GitOps approach. 
+                        I was accepted at INSA and started my adventure as soon as I graduated from high school. I learned a lot of mathematical concepts.
                       </p>
                       <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        I also created k8s operators and applications as a service (Database aaS, S3 buckets aaS, etc.). 
-                      </p>
-                      <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl">
-                        Finally, I was able to exchange ideas with cloud computing organizations.
+                        I realized that it wasn't what I was looking for, so I decided to continue my studies at an IUT.
                       </p>
                     </div>
                     <div class="sm:col-span-2 6xl:col-span-1 col-span-3">
@@ -410,20 +347,6 @@ onMounted(() => {
                           <img class="me-2 h-18 w-24" src="../assets/experience/insa.png">
                           <p class="font-semibold text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">General engineering school</p>
                         </div>
-                      </div>
-                      <div class="mx-auto">
-                        <table class="items-group lg:inline-grid mx-auto" data-step="3">
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
-                            <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
-                          </tr>
-                          <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
-                          </tr>
-                        </table>
                       </div>
                     </div>
                   </div>
@@ -684,6 +607,5 @@ onMounted(() => {
 :is(.dark #main-bg) {
   background: linear-gradient(180deg, rgba(3,0,47,1) 0%, rgba(0,0,0,1) 50%);
 }
-
 
 </style>

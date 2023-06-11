@@ -231,7 +231,7 @@ import { onMounted } from 'vue'
               </div>
               <table class="items-group">
                 <tr class="text-center observe" data-step="12">
-                  <td class="item"><img src="../assets/icons/ada.svg" class="mb-2 ada-lang"></td>
+                  <td class="item"><img src="../assets/icons/ada.svg" class="mb-2 invert-icon"></td>
                   <td class="item"><img src="../assets/icons/typescript.png">Typescript</td>
                 </tr>
               </table>

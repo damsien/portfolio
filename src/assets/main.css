@@ -78,6 +78,6 @@ body, #navbar {
 :is(.dark .extern-icon) {
   filter: invert();
 }
-:is(.dark .ada-lang) {
+:is(.dark .invert-icon) {
   filter: invert();
 }
