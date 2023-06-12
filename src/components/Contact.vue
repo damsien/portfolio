@@ -131,36 +131,36 @@ import { onMounted } from 'vue'
             >Contact me</p>
         </div>
 
-        <div class="text-center mb-10">
+        <div class="text-center mb-10 6xl:text-2xl 4xl:text-xl">
             <div class="inline-block me-5">
-                <a target="_blank" href="https://github.com/Yltaros" class="text-gray-800 dark:text-white"><img class="mx-auto invert-icon" width="40px" src="../assets/github.png" />My Github</a>
+                <a target="_blank" href="https://github.com/Yltaros" class="text-gray-800 dark:text-white"><img class="mx-auto invert-icon w-9 6xl:w-20 4xl:w-16" src="../assets/github.png" />My Github</a>
             </div>
             <div class="inline-block ms-5">
-                <a target="_blank" href="https://www.linkedin.com/in/damien-dassieu-7700b61b7/?locale=en_US" class="text-gray-800 dark:text-white"><img class="mx-auto invert-icon top-1" width="45px" src="../assets/icons/linkedin.png" />My Linkedin</a>
+                <a target="_blank" href="https://www.linkedin.com/in/damien-dassieu-7700b61b7/?locale=en_US" class="text-gray-800 dark:text-white"><img class="mx-auto invert-icon top-1 6xl:top-2 w-11 6xl:w-24 4xl:w-20" src="../assets/icons/linkedin.png" />My Linkedin</a>
             </div>
         </div>
 
-        <div class="lg:w-1/3 sm:w-2/3 w-4/5 mx-auto">
+        <div class="lg:w-1/3 sm:w-2/3 w-4/5 mx-auto text-xl 4xl:text-2xl 6xl:text-3xl">
             <form id="sendForm">
                 <div>
-                    <label for="name" class="text-xl text-gray-800 dark:text-white">Your name</label>
+                    <label for="name" class="text-gray-800 dark:text-white">Your name</label>
                     <input type="text" name="name" id="name" required
                     class="w-full mt-1 p-2 dark:bg-gray-900 dark:text-white focused">
                 </div>
                 <div class="mt-3">
-                    <label for="email" class="text-xl text-gray-800 dark:text-white">Your email</label>
+                    <label for="email" class="text-gray-800 dark:text-white">Your email</label>
                     <input type="text" name="email" id="email" pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" required
                     class="w-full mt-1 border-gray-700 dark:border-gray-200 p-2 dark:bg-gray-900 dark:text-white focused">
                 </div>
                 <div class="mt-3">
-                    <label for="message" class="text-xl text-gray-800 dark:text-white">Your message</label>
+                    <label for="message" class="text-gray-800 dark:text-white">Your message</label>
                     <textarea id="message" name="message" rows="5" required
                             class="w-full mt-1 border-gray-700 dark:border-gray-200 p-2 dark:bg-gray-900 dark:text-white focused"
                             ></textarea>
                 </div>
                 <div class="mt-3">
                     <button type="submit" id="submit"
-                    class="text-xl dark:bg-gray-900 w-full dark:border-white border-gray-700 dark:border-gray-20 p-1 rounded-md border-2 border-solid">
+                    class="dark:bg-gray-900 w-full dark:border-white border-gray-700 dark:border-gray-20 p-1 rounded-md border-2 border-solid">
                         <div id="loading" class="hidden">
                             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
                         </div>

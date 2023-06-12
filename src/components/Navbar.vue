@@ -137,6 +137,22 @@ import { onMounted } from 'vue';
     transform: rotate(0deg);
     width: 1.8rem;
 }
+@media (min-width: 1800px) {
+    #moon {
+        width: 2rem;
+    }
+    #sun {
+        width: 2.5rem;
+    }
+}
+@media (min-width: 2200px) {
+    #moon {
+        width: 2.5rem;
+    }
+    #sun {
+        width: 3rem;
+    }
+}
 
 .dark-toggle {
     transition-timing-function: cubic-bezier(.84,-0.01,.21,1) !important;

@@ -156,14 +156,14 @@ onMounted(() => {
                       <div class="mx-auto">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/cilium.webp">Cilium</td>
+                            <td class="item"><img src="../assets/icons/ansible.png" width="45px" class="mb-2.5 mx-auto">Ansible</td>
                             <td class="item"><img src="../assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px">Operator SDK</td>
+                            <td class="item"><img src="../assets/icons/operator-sdk.png" width="40px" class="mx-auto">Operator SDK</td>
                           </tr>
                           <tr class="text-center">
                             <td class="item"><img src="../assets/icons/s3.png" class="pt-1">S3</td>
                             <td class="item"><img src="../assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1">VMWare</td>
+                            <td class="item"><img src="../assets/icons/vmware.png" width="45px" class="pt-1 pb-1 mx-auto">VMWare</td>
                           </tr>
                         </table>
                       </div>
@@ -206,9 +206,9 @@ onMounted(() => {
                       <div class="mx-auto">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/java.png">Java</td>
-                            <td class="item"><img src="../assets/icons/asm.png" width="50px">Assembly</td>
-                            <td class="item"><img src="../assets/icons/ocaml.png" width="50px">Ocaml</td>
+                            <td class="item"><img src="../assets/icons/java.png" width="47px" class="mb-1 mx-auto">Java</td>
+                            <td class="item"><img src="../assets/icons/asm.png" width="50px" class="mx-auto">Assembly</td>
+                            <td class="item"><img src="../assets/icons/ocaml.png" width="50px" class="mx-auto">Ocaml</td>
                           </tr>
                         </table>
                       </div>
@@ -255,7 +255,7 @@ onMounted(() => {
                       <div class="mx-auto sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/symfony.png">Symfony</td>
+                            <td class="item"><img src="../assets/icons/symfony.png" class="invert-icon">Symfony</td>
                             <td class="item"><img src="../assets/icons/php.png" width="70px">PHP</td>
                             <td class="item"><img src="../assets/icons/ionic.png" width="60px">Ionic</td>
                           </tr>
@@ -281,15 +281,15 @@ onMounted(() => {
                       <div class="mb-5 sm:block hidden float-right">
                         <div class="flex">
                           <p class="font-semibold text-right pe-5 text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">University Institute of Technology</p>
-                          <img class="me-2 h-18 w-24" src="../assets/experience/iut.png">
+                          <img class="me-2 h-18 w-24 4xl:h-16" src="../assets/experience/iut.png">
                         </div>
                       </div>
                       <div class="mx-auto float-right sm:block hidden">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="../assets/icons/java.png">Java</td>
-                            <td class="item"><img src="../assets/icons/python.png" width="50px">Python</td>
-                            <td class="item"><img src="../assets/icons/c.png" width="50px">C</td>
+                            <td class="item"><img src="../assets/icons/java.png" width="47px" class="mb-1 mx-auto">Java</td>
+                            <td class="item"><img src="../assets/icons/python.png" width="47px" class="mx-auto">Python</td>
+                            <td class="item"><img src="../assets/icons/c.png" width="47px" class="mx-auto">C</td>
                           </tr>
                         </table>
                       </div>
@@ -344,7 +344,7 @@ onMounted(() => {
                     <div class="sm:col-span-2 6xl:col-span-1 col-span-3">
                       <div class="mb-5 sm:block hidden">
                         <div class="flex">
-                          <img class="me-2 h-18 w-24" src="../assets/experience/insa.png">
+                          <img class="me-2 h-18 w-24 4xl:h-16" src="../assets/experience/insa.png">
                           <p class="font-semibold text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">General engineering school</p>
                         </div>
                       </div>
