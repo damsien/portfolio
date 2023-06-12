@@ -5,7 +5,7 @@
             Source code available <u>
                 <a class="link invert-icons footer-link" target="_blank" href="https://github.com/Yltaros/portfolio">here</a>
             </u><br />
-            <img class="w-16 6xl:w-24 4xl:w-20 mx-auto" src="../assets/icons/cc.svg" />
+            <img class="w-16 6xl:w-24 4xl:w-20 mx-auto" src="@/assets/icons/cc.svg" />
         </div>
     </div>
 </template>

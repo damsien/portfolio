@@ -115,30 +115,30 @@ import { onMounted } from 'vue'
               <div class="w-5/6 mx-auto flex flex-col-reverse sm:block">
                 <table class="items-group lg:inline-grid observe" data-step="3">
                   <tr class="text-center">
-                    <td class="item"><img src="../assets/icons/typescript.png">Typescript</td>
-                    <td class="item"><img src="../assets/icons/nodejs-light.png" width="100px" class="pt-1 nodejs pb-3">Nodejs</td>
-                    <td class="item"><img src="../assets/icons/mariadb.svg" class="pt-2 pb-4">Mariadb</td>
+                    <td class="item"><img src="@/assets/icons/typescript.png">Typescript</td>
+                    <td class="item"><img src="@/assets/icons/nodejs-light.png" width="100px" class="pt-1 nodejs pb-3">Nodejs</td>
+                    <td class="item"><img src="@/assets/icons/mariadb.svg" class="pt-2 pb-4">Mariadb</td>
                   </tr>
                   <tr class="text-center">
-                    <td class="item"><img src="../assets/icons/vue.png" class="pt-1">Vue</td>
-                    <td class="item"><img src="../assets/icons/kubernetes.png" width="70px">Kubernetes</td>
-                    <td class="item"><img src="../assets/icons/redis.svg" class="pt-1 pb-1">Redis</td>
+                    <td class="item"><img src="@/assets/icons/vue.png" class="pt-1">Vue</td>
+                    <td class="item"><img src="@/assets/icons/kubernetes.png" width="70px">Kubernetes</td>
+                    <td class="item"><img src="@/assets/icons/redis.svg" class="pt-1 pb-1">Redis</td>
                   </tr>
                 </table>
 
                 <div class="lg:inline-grid lg:ms-8 grid xl:grid-cols-none grid-cols-2 mb-7 sm:mb-0 sm:top-4 xl:top-0">
                   <div class="w-full lg:mb-3">
-                    <img src="../assets/icons/web.png" class="inline-block extern-icon">
+                    <img src="@/assets/icons/web.png" class="inline-block extern-icon">
                     <a class="link" href="https://place.inpt.fr" target="_blank"> Open the game</a>
                   </div>
                   <div>
-                    <img src="../assets/icons/github.png" class="inline-block extern-icon">
+                    <img src="@/assets/icons/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-frontend" target="_blank"> Frontend repository</a><br>
 
-                    <img src="../assets/icons/github.png" class="inline-block extern-icon">
+                    <img src="@/assets/icons/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-backend" target="_blank"> Backend repository</a><br>
 
-                    <img src="../assets/icons/github.png" class="inline-block extern-icon">
+                    <img src="@/assets/icons/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-infra" target="_blank"> Helm chart repository</a><br>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ import { onMounted } from 'vue'
             <div class="w-full sm:-top-14 mb-12">
               <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
-              <img src="../assets/projects/pixelwar.png" class="mx-auto mt-4" id="pixel-war-img">
+              <img src="@/assets/projects/pixelwar.png" class="mx-auto mt-4" id="pixel-war-img">
             </div>
           </div>
 
@@ -159,8 +159,8 @@ import { onMounted } from 'vue'
               <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2020</p>
               <div class="text-center mt-4 observe" data-step="4">
-                <img id="sm-img1" src="../assets/projects/smartshuffle1.gif" class="inline-block pe-1">
-                <img id="sm-img2" src="../assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
+                <img id="sm-img1" src="@/assets/projects/smartshuffle1.gif" class="inline-block pe-1">
+                <img id="sm-img2" src="@/assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
               </div>
             </div>
             <div class="w-full sm:top-14 top-0">
@@ -172,13 +172,13 @@ import { onMounted } from 'vue'
                   The mobile application was entirely built with the Flutter framework. The challenge was to get to grips with this new way of designing a UI that moves away from classic mobile design frameworks such as React or Ionic.
                 </p>
                 <br>
-                <img src="../assets/icons/github.png" class="inline-block extern-icon">
+                <img src="@/assets/icons/github.png" class="inline-block extern-icon">
                 <a class="link" href="https://github.com/Yltaros/Smartshuffle" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
                 <tr class="text-center observe" data-step="6">
-                  <td class="item"><img src="../assets/icons/flutter.png">Flutter</td>
-                  <td class="item"><img src="../assets/icons/dart.png">Dart</td>
+                  <td class="item"><img src="@/assets/icons/flutter.png">Flutter</td>
+                  <td class="item"><img src="@/assets/icons/dart.png">Dart</td>
                 </tr>
               </table>
             </div>
@@ -197,20 +197,20 @@ import { onMounted } from 'vue'
                   The project was carried out in a specific framework in which we used the agile method. The Jira tool helped us a lot in the management of our sprints.
                 </p>
                 <br>
-                <img src="../assets/icons/github.png" class="inline-block extern-icon">
+                <img src="@/assets/icons/github.png" class="inline-block extern-icon">
                 <a class="link" href="https://github.com/Yltaros/Minja" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
                 <tr class="text-center observe" data-step="9">
-                  <td class="item"><img src="../assets/icons/java.png">Java</td>
-                  <td class="item"><img src="../assets/icons/jira.png">Jira</td>
+                  <td class="item"><img src="@/assets/icons/java.png">Java</td>
+                  <td class="item"><img src="@/assets/icons/jira.png">Jira</td>
                 </tr>
               </table>
             </div>
             <div class="w-full mb-12">
               <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
-              <img src="../assets/projects/minja.png" id="minja-img" class="mx-auto mt-4 observe" data-step="7">
+              <img src="@/assets/projects/minja.png" id="minja-img" class="mx-auto mt-4 observe" data-step="7">
             </div>
           </div>
 
@@ -221,7 +221,7 @@ import { onMounted } from 'vue'
             <div class="w-full mb-12">
               <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Dato</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2021</p>
-              <img src="../assets/projects/dato.png" id="dato-img" class="mx-auto mt-4 observe" data-step="10">
+              <img src="@/assets/projects/dato.png" id="dato-img" class="mx-auto mt-4 observe" data-step="10">
             </div>
             <div class="w-full sm:top-14 top-0">
               <div class="mx-auto w-5/6 mb-8">
@@ -229,13 +229,13 @@ import { onMounted } from 'vue'
                   For this project realized with a friend. The idea was to create a programming language using a language we didn't like. At that time, we had no knowledge of language translation methods. The challenge was to find the most optimal way to process a piece of program written in "Dato".
                 </p>
                 <br>
-                <img src="../assets/icons/github.png" class="inline-block extern-icon observe" data-step="11">
+                <img src="@/assets/icons/github.png" class="inline-block extern-icon observe" data-step="11">
                 <a class="link" href="https://github.com/Yltaros/Dato" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
                 <tr class="text-center observe" data-step="12">
-                  <td class="item"><img src="../assets/icons/ada.svg" class="mb-2 invert-icon"></td>
-                  <td class="item"><img src="../assets/icons/typescript.png">Typescript</td>
+                  <td class="item"><img src="@/assets/icons/ada.svg" class="mb-2 invert-icon"></td>
+                  <td class="item"><img src="@/assets/icons/typescript.png">Typescript</td>
                 </tr>
               </table>
             </div>
