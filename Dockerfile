@@ -21,11 +21,11 @@ COPY --from=build-stage /app/nginx.conf /etc/nginx/nginx.conf
 RUN mkdir /usr/share/nginx/html/assets/icons
 RUN mkdir /usr/share/nginx/html/assets/experience
 RUN mkdir /usr/share/nginx/html/assets/fonts
-RUN mkdir /usr/share/nginx/html/assets/project
+RUN mkdir /usr/share/nginx/html/assets/projects
 COPY --from=build-stage /app/src/assets/icons /usr/share/nginx/html/assets/icons
 COPY --from=build-stage /app/src/assets/experience /usr/share/nginx/html/assets/experience
 COPY --from=build-stage /app/src/assets/fonts /usr/share/nginx/html/assets/fonts
-COPY --from=build-stage /app/src/assets/project /usr/share/nginx/html/assets/project
+COPY --from=build-stage /app/src/assets/projects /usr/share/nginx/html/assets/projects
 
 EXPOSE 80
 
