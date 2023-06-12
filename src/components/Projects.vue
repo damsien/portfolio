@@ -10,12 +10,12 @@ import { onMounted } from 'vue'
     if (document.documentElement.classList.contains('dark')) {
       nodejs.forEach(n => {
         // @ts-ignore
-        n.src = '/src/assets/icons/nodejs-dark.png';
+        n.src = '../assets/icons/nodejs-dark.png';
       });
     } else {
       nodejs.forEach(n => {
         // @ts-ignore
-        n.src = '/src/assets/icons/nodejs-light.png';
+        n.src = '../assets/icons/nodejs-light.png';
       });
     }
   }
