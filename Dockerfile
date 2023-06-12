@@ -1,4 +1,4 @@
-FROM node:current-alpine3.16 as build-stage
+FROM arm64v8/node:current-alpine3.16 as build-stage
 
 WORKDIR /app
 
