@@ -29,4 +29,4 @@ COPY --from=build-stage /app/src/assets/projects /usr/share/nginx/html/assets/pr
 
 EXPOSE 80
 
-CMD ["/bin/sh",  "-c",  "nginx -g 'daemon off;'"]
+ENTRYPOINT ["/bin/sh",  "-c",  "nginx -g 'daemon off;'"]

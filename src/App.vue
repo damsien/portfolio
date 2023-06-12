@@ -26,7 +26,7 @@ localStorage.removeItem('theme')
 </script>
 
 <template>
-  <div class="antialiased">
+  <div>
 
     <header id="welcome" class="h-12 z-40 dark:bg-black bg-white">
       <Navbar id="navbar" class="fixed w-full" />
