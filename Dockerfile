@@ -18,7 +18,7 @@ FROM nginx:stable-alpine as production-stage
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/nginx.conf /etc/nginx/nginx.conf
-RUN mkdir /usr/share/nginx/html/assets
+# RUN mkdir /usr/share/nginx/html/assets
 COPY --from=build-stage /app/src/assets /usr/share/nginx/html/assets
 
 EXPOSE 80
