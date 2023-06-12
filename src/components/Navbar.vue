@@ -119,7 +119,7 @@ import { onMounted } from 'vue';
         
         <div id="logo">
             <a href="#welcome">
-                <img src="../assets/logo.png"/>
+                <img src="../assets/icons/logo.png"/>
             </a>
         </div>
 

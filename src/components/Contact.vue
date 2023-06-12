@@ -133,7 +133,7 @@ import { onMounted } from 'vue'
 
         <div class="text-center mb-10 6xl:text-2xl 4xl:text-xl">
             <div class="inline-block me-5">
-                <a target="_blank" href="https://github.com/Yltaros" class="text-gray-800 dark:text-white"><img class="mx-auto invert-icon w-9 6xl:w-20 4xl:w-16" src="../assets/github.png" />My Github</a>
+                <a target="_blank" href="https://github.com/Yltaros" class="text-gray-800 dark:text-white"><img class="mx-auto invert-icon w-9 6xl:w-20 4xl:w-16" src="../assets/icons/github.png" />My Github</a>
             </div>
             <div class="inline-block ms-5">
                 <a target="_blank" href="https://www.linkedin.com/in/damien-dassieu-7700b61b7/?locale=en_US" class="text-gray-800 dark:text-white"><img class="mx-auto invert-icon top-1 6xl:top-2 w-11 6xl:w-24 4xl:w-20" src="../assets/icons/linkedin.png" />My Linkedin</a>

@@ -128,17 +128,17 @@ import { onMounted } from 'vue'
 
                 <div class="lg:inline-grid lg:ms-8 grid xl:grid-cols-none grid-cols-2 mb-7 sm:mb-0 sm:top-4 xl:top-0">
                   <div class="w-full lg:mb-3">
-                    <img src="../assets/web.png" class="inline-block extern-icon">
+                    <img src="../assets/icons/web.png" class="inline-block extern-icon">
                     <a class="link" href="https://place.inpt.fr" target="_blank"> Open the game</a>
                   </div>
                   <div>
-                    <img src="../assets/github.png" class="inline-block extern-icon">
+                    <img src="../assets/icons/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-frontend" target="_blank"> Frontend repository</a><br>
 
-                    <img src="../assets/github.png" class="inline-block extern-icon">
+                    <img src="../assets/icons/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-backend" target="_blank"> Backend repository</a><br>
 
-                    <img src="../assets/github.png" class="inline-block extern-icon">
+                    <img src="../assets/icons/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-infra" target="_blank"> Helm chart repository</a><br>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ import { onMounted } from 'vue'
                   The mobile application was entirely built with the Flutter framework. The challenge was to get to grips with this new way of designing a UI that moves away from classic mobile design frameworks such as React or Ionic.
                 </p>
                 <br>
-                <img src="../assets/github.png" class="inline-block extern-icon">
+                <img src="../assets/icons/github.png" class="inline-block extern-icon">
                 <a class="link" href="https://github.com/Yltaros/Smartshuffle" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
@@ -197,7 +197,7 @@ import { onMounted } from 'vue'
                   The project was carried out in a specific framework in which we used the agile method. The Jira tool helped us a lot in the management of our sprints.
                 </p>
                 <br>
-                <img src="../assets/github.png" class="inline-block extern-icon">
+                <img src="../assets/icons/github.png" class="inline-block extern-icon">
                 <a class="link" href="https://github.com/Yltaros/Minja" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
@@ -229,7 +229,7 @@ import { onMounted } from 'vue'
                   For this project realized with a friend. The idea was to create a programming language using a language we didn't like. At that time, we had no knowledge of language translation methods. The challenge was to find the most optimal way to process a piece of program written in "Dato".
                 </p>
                 <br>
-                <img src="../assets/github.png" class="inline-block extern-icon observe" data-step="11">
+                <img src="../assets/icons/github.png" class="inline-block extern-icon observe" data-step="11">
                 <a class="link" href="https://github.com/Yltaros/Dato" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
