@@ -1,12 +1,12 @@
-FROM arm64v8/node:current-alpine3.16 as build-stage
+FROM node:current-alpine3.16 as build-stage
 
 WORKDIR /app
 
 COPY package*.json ./
 
 COPY . .
-# RUN rm -rf ./nodes_modules
-# RUN rm -rf ./dist
+RUN rm -rf ./nodes_modules
+RUN rm -rf ./dist
 
 RUN npm install yarn --legacy-peer-deps
 
@@ -14,7 +14,7 @@ RUN yarn install
 RUN yarn run build-only
 
 
-FROM nginx:stable-alpine as production-stage
+FROM arm64v8/nginx:stable-alpine as production-stage
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/nginx.conf /etc/nginx/nginx.conf
