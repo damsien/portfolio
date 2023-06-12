@@ -5,8 +5,8 @@ WORKDIR /app
 COPY package*.json ./
 
 COPY . .
-RUN rm -rf ./nodes_modules
-RUN rm -rf ./dist
+# RUN rm -rf ./nodes_modules
+# RUN rm -rf ./dist
 
 RUN npm install yarn --legacy-peer-deps
 
