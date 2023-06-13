@@ -28,13 +28,13 @@ onMounted(() => {
       if (element.style.transform != '') {
         translateX = element.style.transform.split('(')[1].split(',')[0];
       }
-      let adaptiveSpeed = (parseFloat(speed) * 1500) / window.innerWidth;
+      let adaptiveSpeed = (parseFloat(speed) * window.innerWidth) / window.innerWidth;
       element.style.transform = `translate(${translateX}, ${scroll * adaptiveSpeed}px)`;
     });
   }));
   window.addEventListener('mousemove', ((e) => {
-    let mousex = window.screen.width/2 - (e.clientX);
-    let mousey = (window.screen.height/2 - (e.clientY))/50;
+    let mousex = window.innerWidth/2 - (e.clientX);
+    let mousey = (window.innerHeight/2 - (e.clientY))/50;
 
     translate.forEach(el => {
       let element = el as HTMLElement;
@@ -60,8 +60,8 @@ onMounted(() => {
             <div class="w-full h-0.5 dark:bg-gray-200 bg-gray-900"></div>
             <div id="title" class="6xl:h-96 lg:h-80 h-64 pt-20 overflow-hidden">
                 <div class="w-fit mx-auto z-10">
-                    <p class="6xl:text-11xl 4xl:text-10xl lg:text-9xl text-7xl font-bold text-gray-800 dark:text-white">Experience</p>
-                    <div id="exp-title-bar" class="mt-7 bg-gray-800 dark:bg-white h-2"></div>
+                    <p class="6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl font-bold text-gray-800 dark:text-white">Experience</p>
+                    <div id="exp-title-bar" class="mt-7 bg-gray-800 dark:bg-white xs:h-2 h-1"></div>
                 </div>
                 <div>
                     <div id="bubble1t" class="bubble"></div>
@@ -122,7 +122,8 @@ onMounted(() => {
                 <div id="orange" class="mt-36">
                   <div class="grid sm:grid-cols-6 grid-cols-3 h-full gap-8">
                     <div class="col-span-3 sm:col-span-1">
-                      <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2021-2024</p>
+                      <p class="font-bold text-6xl 4xl:text-7xl sm:hidden hidden mm:block text-center">2021-2024</p>
+                      <p class="font-bold text-6xl/9 mm:hidden text-center">2024<br />-<br />2021</p>
                       <div id="paral1">
                         <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.35">
                           2024<span id="year-separator"></span>2021</p>
@@ -156,14 +157,14 @@ onMounted(() => {
                       <div class="mx-auto">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/ansible.png" width="45px" class="mb-2.5 mx-auto">Ansible</td>
-                            <td class="item"><img src="@/assets/icons/rancher.png" width="70px">Rancher</td>
-                            <td class="item"><img src="@/assets/icons/operator-sdk.png" width="40px" class="mx-auto">Operator SDK</td>
+                            <td class="item"><img src="@/assets/icons/ansible.png" width="45px" class="item-img mb-2.5">Ansible</td>
+                            <td class="item"><img src="@/assets/icons/rancher.png" width="60px" class="item-img -mb-1">Rancher</td>
+                            <td class="item"><img src="@/assets/icons/operator-sdk.png" width="40px" class="item-img mb-3">OLM</td>
                           </tr>
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/s3.png" class="pt-1">S3</td>
-                            <td class="item"><img src="@/assets/icons/kubernetes.png" width="60px">Kubernetes</td>
-                            <td class="item"><img src="@/assets/icons/vmware.png" width="45px" class="pt-1 pb-1 mx-auto">VMWare</td>
+                            <td class="item"><img src="@/assets/icons/s3.png" width="60px" class="item-img pt-1">S3</td>
+                            <td class="item"><img src="@/assets/icons/kubernetes.png" width="50px" class="item-img mb-1">Kubernetes</td>
+                            <td class="item"><img src="@/assets/icons/vmware.png" width="45px" class="item-img pt-1 pb-1">VMWare</td>
                           </tr>
                         </table>
                       </div>
@@ -206,9 +207,9 @@ onMounted(() => {
                       <div class="mx-auto">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/java.png" width="47px" class="mb-1 mx-auto">Java</td>
-                            <td class="item"><img src="@/assets/icons/asm.png" width="50px" class="mx-auto">Assembly</td>
-                            <td class="item"><img src="@/assets/icons/ocaml.png" width="50px" class="mx-auto">Ocaml</td>
+                            <td class="item"><img src="@/assets/icons/java.png" width="47px" class="item-img mb-1">Java</td>
+                            <td class="item"><img src="@/assets/icons/asm.png" width="50px" class="item-img">Assembly</td>
+                            <td class="item"><img src="@/assets/icons/ocaml.png" width="50px" class="item-img">Ocaml</td>
                           </tr>
                         </table>
                       </div>
@@ -220,7 +221,8 @@ onMounted(() => {
                 <div id="wikicampers" class="mt-36">
                   <div class="grid sm:grid-cols-12 grid-cols-3 h-full gap-8">
                     <div class="col-span-3 block sm:hidden">
-                        <p class="font-bold text-6xl 4xl:text-7xl sm:hidden text-center">2019-2021</p>
+                        <p class="font-bold text-6xl 4xl:text-7xl sm:hidden hidden mm:block text-center">2019-2021</p>
+                        <p class="font-bold text-6xl/9 mm:hidden text-center">2021<br />-<br />2019</p>
                     </div>
                     <div class="sm:col-span-3 6xl:col-span-2 col-span-3">
                       <div class="flex sm:hidden mx-auto w-fit">
@@ -236,9 +238,9 @@ onMounted(() => {
                       <div class="mx-auto float-right sm:block hidden">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/symfony.png" class="invert-icon">Symfony</td>
-                            <td class="item"><img src="@/assets/icons/php.png" width="70px">PHP</td>
-                            <td class="item"><img src="@/assets/icons/ionic.png" width="60px">Ionic</td>
+                            <td class="item"><img src="@/assets/icons/symfony.png" width="45px" class="item-img invert-icon">Symfony</td>
+                            <td class="item"><img src="@/assets/icons/php.png" width="45px" class="item-img">PHP</td>
+                            <td class="item"><img src="@/assets/icons/ionic.png" width="45px" class="item-img">Ionic</td>
                           </tr>
                         </table>
                       </div>
@@ -255,18 +257,18 @@ onMounted(() => {
                       <div class="mx-auto sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/symfony.png" class="invert-icon">Symfony</td>
-                            <td class="item"><img src="@/assets/icons/php.png" width="70px">PHP</td>
-                            <td class="item"><img src="@/assets/icons/ionic.png" width="60px">Ionic</td>
+                            <td class="item"><img src="@/assets/icons/symfony.png" class="item-img invert-icon">Symfony</td>
+                            <td class="item"><img src="@/assets/icons/php.png" width="50px" class="item-img">PHP</td>
+                            <td class="item"><img src="@/assets/icons/ionic.png" width="60px" class="item-img">Ionic</td>
                           </tr>
                         </table>
                       </div>
 
-                      <div id="paral2">
+                      <!-- <div id="paral2">
                         <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.4">
                           2021<span id="year-separator"></span>2019</p>
                         <div id="year-line" class="year-line-left xl:block hidden translate" data-speed="0.4"></div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -281,15 +283,15 @@ onMounted(() => {
                       <div class="mb-5 sm:block hidden float-right">
                         <div class="flex">
                           <p class="font-semibold text-right pe-5 text-xl 6xl:text-3xl/[35px] 4xl:text-3xl/[30px] w-52">University Institute of Technology</p>
-                          <img class="me-2 h-18 w-24 4xl:h-16" src="@/assets/experience/iut.png">
+                          <img class="me-2 h-18 w-24 lg:h-12 4xl:h-16" src="@/assets/experience/iut.png">
                         </div>
                       </div>
                       <div class="mx-auto float-right sm:block hidden">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/java.png" width="47px" class="mb-1 mx-auto">Java</td>
-                            <td class="item"><img src="@/assets/icons/python.png" width="47px" class="mx-auto">Python</td>
-                            <td class="item"><img src="@/assets/icons/c.png" width="47px" class="mx-auto">C</td>
+                            <td class="item"><img src="@/assets/icons/java.png" width="47px" class="item-img mb-1">Java</td>
+                            <td class="item"><img src="@/assets/icons/python.png" width="40px" class="item-img mt-4">Python</td>
+                            <td class="item"><img src="@/assets/icons/c.png" width="40px" class="item-img mb-1 mt-3">‎ C‎ </td>
                           </tr>
                         </table>
                       </div>
@@ -306,9 +308,9 @@ onMounted(() => {
                       <div class="mx-auto sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/java.png">Java</td>
-                            <td class="item"><img src="@/assets/icons/python.png" width="50px">Python</td>
-                            <td class="item"><img src="@/assets/icons/c.png" width="50px">C</td>
+                            <td class="item"><img src="@/assets/icons/java.png" width="47px" class="item-img mb-1">Java</td>
+                            <td class="item"><img src="@/assets/icons/python.png" width="43px" class="item-img mb-1">Python</td>
+                            <td class="item"><img src="@/assets/icons/c.png" width="40px" class="item-img mb-1">C</td>
                           </tr>
                         </table>
                       </div>
@@ -373,41 +375,41 @@ onMounted(() => {
 }
 @media (min-width: 1000px) {
   #paral1 {
-    top: -160px;
+    top: -80px;
   }
 }
-@media (min-width: 1150px) {
+/* @media (min-width: 1150px) {
   #paral1 {
-    top: -140px;
+    top: -100px;
   }
-}
+} */
 @media (min-width: 1300px) {
   #paral1 {
     top: -100px;
   }
 }
-@media (min-width: 1800px) {
+/* @media (min-width: 1800px) {
   #paral1 {
-    top: -50px;
+    top: -100px;
   }
-}
+} */
 
 #paral2 {
   top: -1150px;
 }
 @media (min-width: 900px) {
   #paral2 {
-    top: -920px;
+    top: -600px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1070px) {
   #paral2 {
-    top: -680px;
+    top: -420px;
   }
 }
 @media (min-width: 1150px) {
   #paral2 {
-    top: -590px;
+    top: -450px;
   }
 }
 @media (min-width: 1300px) {
@@ -415,11 +417,16 @@ onMounted(() => {
     top: -490px;
   }
 }
-@media (min-width: 2200px) {
+@media (min-width: 1800px) {
   #paral2 {
-    top: -250px;
+    top: -520px;
   }
 }
+/* @media (min-width: 2200px) {
+  #paral2 {
+    top: -520px;
+  }
+} */
 
 
 
@@ -482,7 +489,13 @@ onMounted(() => {
 
 .year-line-right {
   float: right;
-  right: 15px;
+  right: 0px;
+}
+@media (min-width: 1400px) {
+  .year-line-right {
+    float: right;
+    right: 15px;
+  }
 }
 .year-line-left {
   float: left;
@@ -518,45 +531,54 @@ onMounted(() => {
 
 
 #exp-title-bar {
-    animation: 2s infinite alternate cubic-bezier(.65,.29,.27,.9) exp-title-bar;
+    width: 100%;
+    animation: 7s infinite alternate cubic-bezier(.65,.29,.27,.9) exp-title-bar;
 }
 @keyframes exp-title-bar {
   0% {
-    float: left;
-    width: 0%;
+    transform: scale(0.15, 1);
   }
-  49.9% {
-    float: left;
+  33% {
+    transform: scale(1, 1);
   }
-  50% {
-    float: none;
-    width: 100%;
-  }
-  51.1% {
-    float: right;
+  66% {
+    transform: scale(0.35, 1);
   }
   100% {
-    float: right;
-    width: 0%;
+    transform: scale(0.8, 1);
   }
 }
 
 #bubble1b {
   filter: blur(20px);
-  width: 400px;
-  height: 400px;
+  width: 220px;
+  height: 220px;
   background-color: rgba(0, 255, 102, 0.626);
   top: 200px;
-  left: 20%;
+  left: 10%;
+}
+@media (min-width: 1400px) {
+  #bubble1b {
+    width: 400px;
+    height: 400px;
+    left: 20%;
+  }
 }
 
 #bubble2b {
   filter: blur(50px);
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background-color: rgba(0, 255, 255, 0.6);
   top: 1000px;
-  left: 60%;
+  left: 40%;
+}
+@media (min-width: 1400px) {
+  #bubble2b {
+    width: 500px;
+    height: 500px;
+    left: 60%;
+  }
 }
 
 #bubble3b {
@@ -570,12 +592,20 @@ onMounted(() => {
 
 #bubble4b {
   filter: blur(20px);
-  width: 400px;
-  height: 400px;
+  width: 210px;
+  height: 210px;
   background-color: rgba(0, 255, 255, 0.6);
   top: 1750px;
-  left: 20%;
+  left: 15%;
 }
+@media (min-width: 1400px) {
+  #bubble4b {
+    width: 400px;
+    height: 400px;
+    left: 60%;
+  }
+}
+
 
 #bubble5b {
   filter: blur(50px);
@@ -592,7 +622,14 @@ onMounted(() => {
   height: 350px;
   background-color: rgba(0, 255, 102, 0.626);
   top: 2600px;
-  left: 15%;
+  left: -15%;
+}
+@media (min-width: 1400px) {
+  #bubble6b {
+    width: 350px;
+    height: 350px;
+    left: 15%;
+  }
 }
 
 

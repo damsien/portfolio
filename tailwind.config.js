@@ -10,6 +10,9 @@ module.exports = {
         'space': ['"Space Mono"', 'monospace']
       },
       screens: {
+        '2mm': '350px',
+        'mm': '410px',
+        'xs': '550px',
         '3xl': '1600px',
         '4xl': '1700px',
         '5xl': '1800px',

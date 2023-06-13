@@ -124,11 +124,11 @@ import { onMounted } from 'vue'
         <div class="pt-10 pb-16 text-center">
             <p
                 style="cursor: pointer;"
-                data-value="Contact me"
+                data-value="contact_me"
                 id="contact-title" 
-                class="w-fit mx-auto 6xl:text-11xl 4xl:text-10xl lg:text-9xl text-7xl
+                class="w-fit mx-auto 6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl
                  font-bold text-gray-800 dark:text-white"
-            >Contact me</p>
+            >contact_me</p>
         </div>
 
         <div class="text-center mb-10 6xl:text-2xl 4xl:text-xl">

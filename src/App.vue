@@ -33,7 +33,7 @@ localStorage.removeItem('theme')
     </header>
 
     <main class="font-manrope">
-      <div id="projects"><span id="thefirstsep" class="bg-gray-800 dark:bg-gray-100 sm:h-96 h-80"></span></div>
+      <div id="projects"><span id="thefirstsep" class="bg-gray-900 dark:bg-gray-100 sm:h-96 h-80"></span></div>
       <Welcome class="relative" msg="You did it!" />
       <!-- <div id="thefirstline"></div> -->
       <Projects msg="You did it!" />

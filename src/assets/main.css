@@ -55,13 +55,26 @@ body, #navbar {
   margin-top: 10px;
 }
 
-.item {
+/* .item {
   width: 70px;
   height: 70px;
   border-radius: 100px;
   padding: 10px;
   margin: 10px;
   display: inline-block;
+} */
+
+.item {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+}
+
+.item-img {
+  display: inline-block;
+  /* margin-bottom: 7px; */
+  /* width: 50px; */
 }
 
 .extern-icon {

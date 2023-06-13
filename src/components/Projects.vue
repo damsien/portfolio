@@ -90,11 +90,10 @@ import { onMounted } from 'vue'
     <div id="main-bg" class="dark:bg-gray-900 bg-gray-200 dark:text-white text-black">
       <div id="bubble" class="bstep0"></div>
 
-      <p id="project-title" class="6xl:text-11xl 4xl:text-10xl lg:text-9xl text-7xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
+      <p id="project-title" class="6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
       
       <div class="overflow-hidden">
         <div id="blob"></div>
-        <div id="blur"></div>
         <div class="z-10">
 
           <!-- Pixel War -->
@@ -145,7 +144,7 @@ import { onMounted } from 'vue'
               </div>
             </div>
             <div class="w-full sm:-top-14 mb-12">
-              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
               <img src="@/assets/projects/pixelwar.png" class="mx-auto mt-4" id="pixel-war-img">
             </div>
@@ -156,7 +155,7 @@ import { onMounted } from 'vue'
           <!-- Smartshuffle -->
           <div class="sm:grid sm:grid-cols-2">
             <div class="w-full mb-12">
-              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2020</p>
               <div class="text-center mt-4 observe" data-step="4">
                 <img id="sm-img1" src="@/assets/projects/smartshuffle1.gif" class="inline-block pe-1">
@@ -208,7 +207,7 @@ import { onMounted } from 'vue'
               </table>
             </div>
             <div class="w-full mb-12">
-              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
               <img src="@/assets/projects/minja.png" id="minja-img" class="mx-auto mt-4 observe" data-step="7">
             </div>
@@ -219,7 +218,7 @@ import { onMounted } from 'vue'
           <!-- Dato -->
           <div class="sm:grid sm:grid-cols-2">
             <div class="w-full mb-12">
-              <p class="text-5xl 4xl:text-6xl 6xl:text-7xl font-semibold text-center sm:mb-0 mb-16">Dato</p>
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center sm:mb-0 mb-16">Dato</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2021</p>
               <img src="@/assets/projects/dato.png" id="dato-img" class="mx-auto mt-4 observe" data-step="10">
             </div>
@@ -357,7 +356,7 @@ import { onMounted } from 'vue'
 #blob {
   position: absolute;
   background: linear-gradient(to right, aquamarine, rgb(3, 189, 235));
-  height: 200px;
+  height: 125px;
   aspect-ratio: 1;
   left: 50%;
   top: 50%;
@@ -366,6 +365,11 @@ import { onMounted } from 'vue'
   animation: rotate-blob 20s infinite;
   opacity: 0.5;
   filter: blur(40px);
+}
+@media (min-width: 1070px) {
+  #blob {
+    height: 200px;
+  }
 }
 @keyframes rotate-blob {
   from {
