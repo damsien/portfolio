@@ -45,12 +45,14 @@ import { onMounted } from 'vue';
             document.getElementById('moon')?.classList.remove('opacity-50');
             document.getElementById('moon')?.classList.add('opacity-100');
             //@ts-ignore
-            document.getElementById('moon').style.transform = 'rotate(180deg)'
+            document.getElementById('moon').style.transform = 'rotate(360deg)'
+            //@ts-ignore
+            document.getElementById('moon').style.transform = 'rotate(0deg)'
 
             document.documentElement.classList.remove('dark');
         } else {
             //@ts-ignore
-            document.getElementById('moon').style.transform = 'rotate(0deg)'
+            document.getElementById('moon').style.transform = 'rotate(180deg)'
             document.getElementById('moon')?.classList.remove('opacity-100');
             document.getElementById('moon')?.classList.add('opacity-50');
             //@ts-ignore
@@ -105,8 +107,8 @@ import { onMounted } from 'vue';
 
             <div id="toggle" class="flex-auto fixed right-0 mt-2.5 sm:mt-3 me-28 sm:me-36 3xl:me-44 6xl:me-52">
                 <button @click="toggle">
-                    <img id="moon" class="dark-toggle mt-1 ms-1 absolute" src="@/assets/icons/moon.svg" />
-                    <img id="sun" class="dark-toggle relative" src="@/assets/icons/sun.svg" />
+                    <img id="moon" class="dark-toggle sm:mt-0.5 ms-1 absolute" src="@/assets/icons/moon1.svg" />
+                    <img id="sun" class="dark-toggle sm:mt-0 relative" src="@/assets/icons/sun1.svg" />
                 </button>
             </div>
 
@@ -130,12 +132,22 @@ import { onMounted } from 'vue';
 <style scoped>
 
 #moon {
-    transform: rotate(-180deg);
-    width: 1.3rem;
+    transform: rotate(180deg);
+    width: 0.9rem;
+    margin-top: 0.4rem;
 }
 #sun {
     transform: rotate(0deg);
-    width: 1.8rem;
+    width: 1.2rem;
+    margin-top: 0.35rem;
+}
+@media (min-width: 640px) {
+    #moon {
+        width: 1.3rem;
+    }
+    #sun {
+        width: 1.8rem;
+    }
 }
 @media (min-width: 1800px) {
     #moon {

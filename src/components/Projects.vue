@@ -93,7 +93,7 @@ import { onMounted } from 'vue'
       <p id="project-title" class="6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
       
       <div class="overflow-hidden">
-        <div id="blob"></div>
+        <div id="blob" class="hidden sm:block"></div>
         <div class="z-10">
 
           <!-- Pixel War -->
@@ -114,14 +114,14 @@ import { onMounted } from 'vue'
               <div class="w-5/6 mx-auto flex flex-col-reverse sm:block">
                 <table class="items-group lg:inline-grid observe" data-step="3">
                   <tr class="text-center">
-                    <td class="item"><img src="@/assets/icons/typescript.png">Typescript</td>
-                    <td class="item"><img src="@/assets/icons/nodejs-light.png" width="100px" class="pt-1 nodejs pb-3">Nodejs</td>
-                    <td class="item"><img src="@/assets/icons/mariadb.svg" class="pt-2 pb-4">Mariadb</td>
+                    <td class="item"><img src="@/assets/icons/typescript.png" width="55px" class="item-img mt-1 mb-3">Typescript</td>
+                    <td class="item"><img src="@/assets/icons/nodejs-light.png" width="100px" class="item-img mt-1 nodejs mb-3">Nodejs</td>
+                    <td class="item"><img src="@/assets/icons/mariadb.svg" class="item-img mt-2 mb-4">Mariadb</td>
                   </tr>
                   <tr class="text-center">
-                    <td class="item"><img src="@/assets/icons/vue.png" class="pt-1">Vue</td>
-                    <td class="item"><img src="@/assets/icons/kubernetes.png" width="70px">Kubernetes</td>
-                    <td class="item"><img src="@/assets/icons/redis.svg" class="pt-1 pb-1">Redis</td>
+                    <td class="item"><img src="@/assets/icons/vue.png" width="55px" class="item-img mt-1 mb-3">Vue</td>
+                    <td class="item"><img src="@/assets/icons/kubernetes.png" width="65px" class="item-img mb-1">Kubernetes</td>
+                    <td class="item"><img src="@/assets/icons/redis.svg" width="60px" class="item-img mt-1 mb-1">Redis</td>
                   </tr>
                 </table>
 
@@ -175,9 +175,9 @@ import { onMounted } from 'vue'
                 <a class="link" href="https://github.com/Yltaros/Smartshuffle" target="_blank"> Repository</a><br>
               </div>
               <table class="items-group">
-                <tr class="text-center observe" data-step="6">
-                  <td class="item"><img src="@/assets/icons/flutter.png">Flutter</td>
-                  <td class="item"><img src="@/assets/icons/dart.png">Dart</td>
+                <tr class="text-center mx-auto observe" data-step="6">
+                  <td class="item"><img src="@/assets/icons/flutter.png" width="65px" class="item-img mt-1 mb-2 pe-2">Flutter</td>
+                  <td class="item"><img src="@/assets/icons/dart.png" width="70px" class="item-img">Dart</td>
                 </tr>
               </table>
             </div>
@@ -201,8 +201,8 @@ import { onMounted } from 'vue'
               </div>
               <table class="items-group">
                 <tr class="text-center observe" data-step="9">
-                  <td class="item"><img src="@/assets/icons/java.png">Java</td>
-                  <td class="item"><img src="@/assets/icons/jira.png">Jira</td>
+                  <td class="item"><img src="@/assets/icons/java.png" width="60px" class="item-img mb-2">Java</td>
+                  <td class="item"><img src="@/assets/icons/jira.png" width="60px" class="item-img mb-2">Jira</td>
                 </tr>
               </table>
             </div>
@@ -233,8 +233,8 @@ import { onMounted } from 'vue'
               </div>
               <table class="items-group">
                 <tr class="text-center observe" data-step="12">
-                  <td class="item"><img src="@/assets/icons/ada.svg" class="mb-2 invert-icon"></td>
-                  <td class="item"><img src="@/assets/icons/typescript.png">Typescript</td>
+                  <td class="item"><img src="@/assets/icons/ada.svg" width="60px" class="item-img mb-2 invert-icon">Ada</td>
+                  <td class="item"><img src="@/assets/icons/typescript.png" width="55px" class="item-img mb-3 mt-1">Typescript</td>
                 </tr>
               </table>
             </div>
@@ -356,7 +356,7 @@ import { onMounted } from 'vue'
 #blob {
   position: absolute;
   background: linear-gradient(to right, aquamarine, rgb(3, 189, 235));
-  height: 125px;
+  height: 200px;
   aspect-ratio: 1;
   left: 50%;
   top: 50%;
@@ -365,11 +365,6 @@ import { onMounted } from 'vue'
   animation: rotate-blob 20s infinite;
   opacity: 0.5;
   filter: blur(40px);
-}
-@media (min-width: 1070px) {
-  #blob {
-    height: 200px;
-  }
 }
 @keyframes rotate-blob {
   from {

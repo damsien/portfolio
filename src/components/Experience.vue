@@ -80,7 +80,7 @@ onMounted(() => {
                 <div id="bubble5b" class="bubble translate" data-speed="-0.7" data-mspeed="0.7"></div>
                 <div id="bubble6b" class="bubble translate" data-speed="-0.5" data-mspeed="0.25"></div>
               </div>
-              <div class="pt-16 px-10 lg:px-20">
+              <div class="pt-16 px-4 lg:px-20">
               
                 <div id="knu">
                   <div class="grid sm:grid-cols-12 grid-cols-3 h-full gap-8">
@@ -157,9 +157,9 @@ onMounted(() => {
                       <div class="mx-auto">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/ansible.png" width="45px" class="item-img mb-2.5">Ansible</td>
-                            <td class="item"><img src="@/assets/icons/rancher.png" width="60px" class="item-img -mb-1">Rancher</td>
-                            <td class="item"><img src="@/assets/icons/operator-sdk.png" width="40px" class="item-img mb-3">OLM</td>
+                            <td class="item"><img src="@/assets/icons/ansible.png" width="42px" class="item-img mb-2.5">Ansible</td>
+                            <td class="item"><img src="@/assets/icons/rancher.png" width="60px" class="item-img -mt-3">Rancher</td>
+                            <td class="item"><img src="@/assets/icons/operator-sdk.png" width="41px" class="item-img mb-3">OLM</td>
                           </tr>
                           <tr class="text-center">
                             <td class="item"><img src="@/assets/icons/s3.png" width="60px" class="item-img pt-1">S3</td>
@@ -238,9 +238,9 @@ onMounted(() => {
                       <div class="mx-auto float-right sm:block hidden">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/symfony.png" width="45px" class="item-img invert-icon">Symfony</td>
-                            <td class="item"><img src="@/assets/icons/php.png" width="45px" class="item-img">PHP</td>
-                            <td class="item"><img src="@/assets/icons/ionic.png" width="45px" class="item-img">Ionic</td>
+                            <td class="item"><img src="@/assets/icons/symfony.png" width="43px" class="item-img invert-icon">Symfony</td>
+                            <td class="item"><img src="@/assets/icons/php.png" width="43px" class="item-img">PHP</td>
+                            <td class="item"><img src="@/assets/icons/ionic.png" width="40px" class="item-img">Ionic</td>
                           </tr>
                         </table>
                       </div>
@@ -257,9 +257,9 @@ onMounted(() => {
                       <div class="mx-auto sm:hidden block">
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
-                            <td class="item"><img src="@/assets/icons/symfony.png" class="item-img invert-icon">Symfony</td>
-                            <td class="item"><img src="@/assets/icons/php.png" width="50px" class="item-img">PHP</td>
-                            <td class="item"><img src="@/assets/icons/ionic.png" width="60px" class="item-img">Ionic</td>
+                            <td class="item"><img src="@/assets/icons/symfony.png" width="43px" class="item-img invert-icon">Symfony</td>
+                            <td class="item"><img src="@/assets/icons/php.png" width="43px" class="item-img">PHP</td>
+                            <td class="item"><img src="@/assets/icons/ionic.png" width="40px" class="item-img">Ionic</td>
                           </tr>
                         </table>
                       </div>
@@ -290,8 +290,8 @@ onMounted(() => {
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
                             <td class="item"><img src="@/assets/icons/java.png" width="47px" class="item-img mb-1">Java</td>
-                            <td class="item"><img src="@/assets/icons/python.png" width="40px" class="item-img mt-4">Python</td>
-                            <td class="item"><img src="@/assets/icons/c.png" width="40px" class="item-img mb-1 mt-3">‎ C‎ </td>
+                            <td class="item"><img src="@/assets/icons/python.png" width="40px" class="item-img mt-2 mb-1">Python</td>
+                            <td class="item"><img src="@/assets/icons/c.png" width="40px" class="item-img mb-1 mt-3"><p>C</p></td>
                           </tr>
                         </table>
                       </div>
@@ -309,8 +309,8 @@ onMounted(() => {
                         <table class="items-group lg:inline-grid mx-auto" data-step="3">
                           <tr class="text-center">
                             <td class="item"><img src="@/assets/icons/java.png" width="47px" class="item-img mb-1">Java</td>
-                            <td class="item"><img src="@/assets/icons/python.png" width="43px" class="item-img mb-1">Python</td>
-                            <td class="item"><img src="@/assets/icons/c.png" width="40px" class="item-img mb-1">C</td>
+                            <td class="item"><img src="@/assets/icons/python.png" width="40px" class="item-img mt-2 mb-1">Python</td>
+                            <td class="item"><img src="@/assets/icons/c.png" width="40px" class="item-img mb-1 mt-3"><p>C</p></td>
                           </tr>
                         </table>
                       </div>
