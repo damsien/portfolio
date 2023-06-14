@@ -144,9 +144,11 @@ import { onMounted } from 'vue';
 @media (min-width: 640px) {
     #moon {
         width: 1.3rem;
+        margin-top: 0.1rem;
     }
     #sun {
         width: 1.8rem;
+        margin-top: 0rem;
     }
 }
 @media (min-width: 1800px) {
@@ -155,14 +157,6 @@ import { onMounted } from 'vue';
     }
     #sun {
         width: 2.5rem;
-    }
-}
-@media (min-width: 2200px) {
-    #moon {
-        width: 2.5rem;
-    }
-    #sun {
-        width: 3rem;
     }
 }
 
