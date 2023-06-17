@@ -107,8 +107,8 @@ import { onMounted } from 'vue';
 
             <div id="toggle" class="flex-auto fixed right-0 mt-2.5 sm:mt-3 me-28 sm:me-36 3xl:me-44 6xl:me-52">
                 <button @click="toggle">
-                    <img id="moon" class="dark-toggle sm:mt-0.5 ms-1 absolute" src="@/assets/icons/moon1.svg" />
-                    <img id="sun" class="dark-toggle sm:mt-0 relative" src="@/assets/icons/sun1.svg" />
+                    <img id="moon" class="dark-toggle absolute" src="@/assets/icons/moon1.svg" />
+                    <img id="sun" class="dark-toggle relative" src="@/assets/icons/sun1.svg" />
                 </button>
             </div>
 
@@ -135,16 +135,18 @@ import { onMounted } from 'vue';
     transform: rotate(180deg);
     width: 0.9rem;
     margin-top: 0.4rem;
+    right: 3px;
 }
 #sun {
     transform: rotate(0deg);
     width: 1.2rem;
-    margin-top: 0.35rem;
+    margin-top: 0.3rem;
 }
 @media (min-width: 640px) {
     #moon {
         width: 1.3rem;
-        margin-top: 0.1rem;
+        margin-top: 0.2rem;
+        right: 5px;
     }
     #sun {
         width: 1.8rem;
@@ -153,10 +155,12 @@ import { onMounted } from 'vue';
 }
 @media (min-width: 1800px) {
     #moon {
-        width: 2rem;
+        width: 1.8rem;
+        margin-top: 0.5rem;
     }
     #sun {
         width: 2.5rem;
+        margin-top: 0.2rem;
     }
 }
 

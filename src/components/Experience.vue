@@ -264,11 +264,11 @@ onMounted(() => {
                         </table>
                       </div>
 
-                      <!-- <div id="paral2">
+                      <div id="paral2">
                         <p class="font-bold 4xl:text-7xl 6xl:text-9xl lg:text-6xl sm:text-4xl hidden sm:inline-block translate" data-speed="0.4">
                           2021<span id="year-separator"></span>2019</p>
                         <div id="year-line" class="year-line-left xl:block hidden translate" data-speed="0.4"></div>
-                      </div> -->
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -648,16 +648,13 @@ onMounted(() => {
 }
 @keyframes bubble1t {
   0% {
-    left: 10%;
-    top: -20%;
+    transform: translate(110%, -20%);
   }
   50% {
-    left: 5%;
-    top: 50%;
+    transform: translate(60%, -80%);
   }
   100% {
-    left: 60%;
-    top: 20%;
+    transform: translate(5%, 20%);
   }
 }
 #bubble2t {
@@ -666,16 +663,13 @@ onMounted(() => {
 }
 @keyframes bubble2t {
   0% {
-    left: 90%;
-    top: -20%;
+    transform: translate(90%, -5%);
   }
   50% {
-    left: 75%;
-    top: 10%;
+    transform: translate(175%, 10%);
   }
   100% {
-    left: 5%;
-    top: 10%;
+    transform: translate(25%, -45%);
   }
 }
 #bubble3t {
@@ -684,16 +678,13 @@ onMounted(() => {
 }
 @keyframes bubble3t {
   0% {
-    left: 0%;
-    top: 40%;
+    transform: translate(0%, 0%);
   }
   50% {
-    left: 50%;
-    top: 10%;
+    transform: translate(50%, 5%);
   }
   100% {
-    left: 65%;
-    top: 10%;
+    transform: translate(187%, -25%);
   }
 }
 
