@@ -90,7 +90,7 @@ import { onMounted } from 'vue'
     <div id="main-bg" class="dark:bg-gray-900 bg-gray-200 dark:text-white text-black">
       <div id="bubble" class="bstep0"></div>
 
-      <p id="project-title" class="6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl font-bold text-center -top-20 z-10 text-white dark:text-black">Projects</p>
+      <p id="project-title" class="6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl font-bold text-center -top-20 z-10 text-white dark:text-black tracking-tight">Projects</p>
       
       <div class="overflow-hidden">
         <div id="blob" class="hidden sm:block"></div>
@@ -98,14 +98,14 @@ import { onMounted } from 'vue'
 
           <!-- Pixel War -->
           <div class="sm:grid sm:grid-cols-2 top-44 flex flex-col-reverse">
-            <div class="w-full">
+            <div class="w-full sm:top-10 top-0">
               <div class="mx-auto w-5/6 mb-8 observe" data-step="2">
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   Pixel War is an online game inspired by Reddit r/place. The principle is simple: put pixels on the map to form a drawing.
-                </p>
+                </p><br />
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   The first session I launched welcomed 500 players for 150K pixels placed. The challenge was to ensure the state of the game in real time on all devices. The "real time" part is managed by Redis while the history of the game is stored in Mariadb.
-                </p>
+                </p><br />
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   The stack of the site is quite classical with Nestjs for the api/backend and Vue for the frontend.
                 </p>
@@ -162,14 +162,14 @@ import { onMounted } from 'vue'
                 <img id="sm-img2" src="@/assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
               </div>
             </div>
-            <div class="w-full sm:top-14 top-0">
+            <div class="w-full sm:top-20 top-0">
               <div class="mx-auto w-5/6 mb-8">
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   In the world of audio streaming, some music is only uploaded on certain platforms. How to create a playlist with music from different platforms? Smartshuffle answers this need. For now, it is possible to merge playlists from Spotify and Youtube.
-                </p>
+                </p><br />
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="5">
                   The mobile application was entirely built with the Flutter framework. The challenge was to get to grips with this new way of designing a UI that moves away from classic mobile design frameworks such as React or Ionic.
-                </p>
+                </p><br />
                 <br>
                 <img src="@/assets/icons/github.png" class="inline-block extern-icon">
                 <a class="link" href="https://github.com/Yltaros/Smartshuffle" target="_blank"> Repository</a><br>
@@ -187,11 +187,11 @@ import { onMounted } from 'vue'
 
           <!-- Minja -->
           <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse">
-            <div class="w-full sm:top-14 top-0">
+            <div class="w-full sm:top-20 top-0">
               <div class="mx-auto w-5/6 mb-8">
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   Minja is a project realized with the help of 4 other friends. We created a mod for the game Minecraft. The technical challenge was to bring new game mechanics that were not coded in the game.
-                </p>
+                </p><br />
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="8">
                   The project was carried out in a specific framework in which we used the agile method. The Jira tool helped us a lot in the management of our sprints.
                 </p>
@@ -222,7 +222,7 @@ import { onMounted } from 'vue'
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2021</p>
               <img src="@/assets/projects/dato.png" id="dato-img" class="mx-auto mt-4 observe" data-step="10">
             </div>
-            <div class="w-full sm:top-14 top-0">
+            <div class="w-full sm:top-20 top-0">
               <div class="mx-auto w-5/6 mb-8">
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   For this project realized with a friend. The idea was to create a programming language using a language we didn't like. At that time, we had no knowledge of language translation methods. The challenge was to find the most optimal way to process a piece of program written in "Dato".

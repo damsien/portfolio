@@ -128,7 +128,7 @@ import { onMounted } from 'vue'
     <div class="grid sm:grid-cols-2">
       <div class="w-full top-1/3 6xl:pt-36 h-72">
         <div class="sm:float-right mx-auto text-left ps-8 sm:ps-0">
-          <p class="blend 6xl:text-12xl 4xl:text-10xl lg:text-9xl md:text-8xl xs:text-7xl 2mm:text-6xl text-5xl font-bold">Welcome</p>
+          <p class="blend 6xl:text-12xl 4xl:text-10xl lg:text-9xl md:text-8xl xs:text-7xl 2mm:text-6xl text-5xl font-bold tracking-tight">Welcome</p>
           <p class="blend 6xl:text-8xl 4xl:text-6xl lg:text-5xl text-3xl font-semibold">to my portofolio</p>
           <br><br>
           <p class="blend 6xl:text-5xl 4xl:text-4xl lg:text-3xl text-xl font-bold">Hey! I'm Damien Dassieu</p>
@@ -225,11 +225,11 @@ import { onMounted } from 'vue'
 }
 @keyframes fadeIn {
   from {
-    top: 0px;
+    transform: translateY(0px);
     opacity: 0;
   }
   to {
-    top: 40px;
+    transform: translateY(40px);
     opacity: 1;
   }
 }
@@ -241,11 +241,11 @@ import { onMounted } from 'vue'
 }
 @keyframes fadeOut {
   from {
-    top: 40px;
+    transform: translateY(0px);
     opacity: 1;
   }
   to {
-    top: 0px;
+    transform: translateY(-40px);
     opacity: 0;
   }
 }

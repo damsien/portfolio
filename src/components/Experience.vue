@@ -60,7 +60,7 @@ onMounted(() => {
             <div class="w-full h-0.5 dark:bg-gray-200 bg-gray-900"></div>
             <div id="title" class="6xl:h-96 lg:h-80 h-64 pt-20 overflow-hidden">
                 <div class="w-fit mx-auto z-10">
-                    <p class="6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl font-bold text-gray-800 dark:text-white">Experience</p>
+                    <p class="6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl font-bold text-gray-800 dark:text-white tracking-tight">Experience</p>
                     <div id="exp-title-bar" class="mt-7 bg-gray-800 dark:bg-white xs:h-2 h-1"></div>
                 </div>
                 <div>

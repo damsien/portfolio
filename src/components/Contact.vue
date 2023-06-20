@@ -127,7 +127,7 @@ import { onMounted } from 'vue'
                 data-value="contact_me"
                 id="contact-title" 
                 class="w-fit mx-auto 6xl:text-11xl 4xl:text-10xl lg:text-9xl mm:text-7xl 2mm:text-6xl text-5xl
-                 font-bold text-gray-800 dark:text-white"
+                 font-bold text-gray-800 dark:text-white tracking-tight"
             >contact_me</p>
         </div>
 
