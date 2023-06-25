@@ -128,7 +128,7 @@ import { onMounted } from 'vue'
                 <div class="lg:inline-grid lg:ms-8 grid xl:grid-cols-none grid-cols-2 mb-7 sm:mb-0 sm:top-4 xl:top-0">
                   <div class="w-full lg:mb-3">
                     <img src="@/assets/icons/web.png" class="inline-block extern-icon">
-                    <a class="link" href="https://place.inpt.fr" target="_blank"> Open the game</a>
+                    <a class="link" href="https://place.inpt.fr/view" target="_blank"> Open the game</a>
                   </div>
                   <div>
                     <img src="@/assets/icons/github.png" class="inline-block extern-icon">
