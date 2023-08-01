@@ -107,8 +107,8 @@ import { onMounted } from 'vue';
 
             <div id="toggle" class="flex-auto fixed right-0 mt-2.5 sm:mt-3 me-28 sm:me-36 3xl:me-44 6xl:me-52">
                 <button @click="toggle">
-                    <img id="moon" class="dark-toggle absolute" src="@/assets/icons/moon1.svg" />
-                    <img id="sun" class="dark-toggle relative" src="@/assets/icons/sun1.svg" />
+                    <img id="moon" class="dark-toggle absolute" src="@/assets/icons/moon-r.svg" />
+                    <img id="sun" class="dark-toggle relative" src="@/assets/icons/sun-r.svg" />
                 </button>
             </div>
 
