@@ -103,7 +103,7 @@ import { onMounted } from 'vue'
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   syngit is a Kubernetes operator that allows you to push resources on a git repository and manage their lifecycle.
                 </p><br />
-                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="5">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="1">
                   This operator is currently used in Orange in a production context. It is open-source and has been applied to the CNCF Sandbox program.
                 </p><br />
                 <br>
@@ -118,7 +118,7 @@ import { onMounted } from 'vue'
               </table>
             </div>
             <div class="w-full mb-12 sm:-top-14">
-              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">syngit</p>
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="2">syngit</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2024</p>
               <img src="@/assets/projects/syngit.png" class="mx-auto mt-4" id="syngit-img">
             </div>
@@ -127,9 +127,9 @@ import { onMounted } from 'vue'
           <br><br><br><br><br><br>
 
           <!-- Pixel War -->
-          <div class="sm:grid sm:grid-cols-2 top-44 flex flex-col-reverse">
+          <div class="sm:grid sm:grid-cols-2 top-44">
             <div class="w-full mb-12">
-              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="4">Pixel War</p>
               <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
               <img src="@/assets/projects/pixelwar.png" class="mx-auto mt-4" id="pixel-war-img">
             </div>
@@ -147,7 +147,7 @@ import { onMounted } from 'vue'
               </div>
               
               <div class="w-5/6 mx-auto flex flex-col-reverse sm:block">
-                <table class="items-group lg:inline-grid observe" data-step="3">
+                <table class="items-group lg:inline-grid observe" data-step="6">
                   <tr class="text-center">
                     <td class="item"><img src="@/assets/icons/typescript.png" width="55px" class="item-img mt-1 mb-3">Typescript</td>
                     <td class="item"><img src="@/assets/icons/nodejs-light.png" width="100px" class="item-img mt-1 nodejs mb-3">Nodejs</td>
@@ -183,13 +183,13 @@ import { onMounted } from 'vue'
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
           <!-- Smartshuffle -->
-          <div class="sm:grid sm:grid-cols-2">
+          <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse">
             <div class="w-full sm:top-20 top-0">
               <div class="mx-auto w-5/6 mb-8">
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
                   In the world of audio streaming, some music is only uploaded on certain platforms. How to create a playlist with music from different platforms? Smartshuffle answers this need. For now, it is possible to merge playlists from Spotify and Youtube.
                 </p><br />
-                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="5">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="6">
                   The mobile application was entirely built with the Flutter framework. The challenge was to get to grips with this new way of designing a UI that moves away from classic mobile design frameworks such as React or Ionic.
                 </p><br />
                 <br>
