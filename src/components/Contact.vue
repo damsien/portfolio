@@ -3,61 +3,61 @@ import { onMounted } from 'vue'
 
     onMounted(() => {
         // @ts-ignore
-        document.getElementById('sendForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission and page reload
+        // document.getElementById('sendForm').addEventListener('submit', function(event) {
+        //     event.preventDefault(); // Prevent form submission and page reload
             
-            document.getElementById('sendText')?.classList.add('hidden')
-            document.getElementById('loading')?.classList.remove('hidden')
+        //     document.getElementById('sendText')?.classList.add('hidden')
+        //     document.getElementById('loading')?.classList.remove('hidden')
 
-            // @ts-ignore
-            const name = document.getElementById('name').value
-            // @ts-ignore
-            const email = document.getElementById('email').value
-            // @ts-ignore
-            const message = document.getElementById('message').value
+        //     // @ts-ignore
+        //     const name = document.getElementById('name').value
+        //     // @ts-ignore
+        //     const email = document.getElementById('email').value
+        //     // @ts-ignore
+        //     const message = document.getElementById('message').value
 
-            const formData = {
-                name: name,
-                email: email,
-                message: message
-            }
+        //     const formData = {
+        //         name: name,
+        //         email: email,
+        //         message: message
+        //     }
 
-            if (document.getElementById('submit')?.innerHTML != 'Sent!') {
+        //     if (document.getElementById('submit')?.innerHTML != 'Sent!') {
 
-                fetch('/api/v1/send', {
-                    method: 'POST',
-                    body: JSON.stringify(formData)
-                })
-                    .then(response => {
+        //         fetch('/api/v1/send', {
+        //             method: 'POST',
+        //             body: JSON.stringify(formData)
+        //         })
+        //             .then(response => {
 
-                        // Handle response as needed
-                        if (response.ok) {
-                            // @ts-ignore
-                            document.getElementById('submit').innerHTML = 'Sent!'
-                            document.getElementById('submit')?.classList.add('submited')
-                        } else {
-                            // @ts-ignore
-                            document.getElementById('submit').innerHTML = 'Sent!'
-                            document.getElementById('submit')?.classList.add('submited')
-                        }
+        //                 // Handle response as needed
+        //                 if (response.ok) {
+        //                     // @ts-ignore
+        //                     document.getElementById('submit').innerHTML = 'Sent!'
+        //                     document.getElementById('submit')?.classList.add('submited')
+        //                 } else {
+        //                     // @ts-ignore
+        //                     document.getElementById('submit').innerHTML = 'Sent!'
+        //                     document.getElementById('submit')?.classList.add('submited')
+        //                 }
 
-                        setTimeout(function(){
-                            document.getElementById('sendText')?.classList.remove('hidden')
-                            document.getElementById('loading')?.classList.add('hidden')
-                        }, 5000);
-                    })
-                    .catch(error => {
-                        // @ts-ignore
-                        document.getElementById('submit').innerHTML = 'Sent!'
-                        document.getElementById('submit')?.classList.add('submited')
+        //                 setTimeout(function(){
+        //                     document.getElementById('sendText')?.classList.remove('hidden')
+        //                     document.getElementById('loading')?.classList.add('hidden')
+        //                 }, 5000);
+        //             })
+        //             .catch(error => {
+        //                 // @ts-ignore
+        //                 document.getElementById('submit').innerHTML = 'Sent!'
+        //                 document.getElementById('submit')?.classList.add('submited')
 
-                        setTimeout(function(){
-                            document.getElementById('sendText')?.classList.remove('hidden')
-                            document.getElementById('loading')?.classList.add('hidden')
-                        }, 5000);
-                    });
-            }
-        });
+        //                 setTimeout(function(){
+        //                     document.getElementById('sendText')?.classList.remove('hidden')
+        //                     document.getElementById('loading')?.classList.add('hidden')
+        //                 }, 5000);
+        //             });
+        //     }
+        // });
 
 
 
@@ -140,7 +140,7 @@ import { onMounted } from 'vue'
             </div>
         </div>
 
-        <div class="lg:w-1/3 sm:w-2/3 w-4/5 mx-auto text-xl 4xl:text-2xl 6xl:text-3xl">
+        <!-- <div class="lg:w-1/3 sm:w-2/3 w-4/5 mx-auto text-xl 4xl:text-2xl 6xl:text-3xl">
             <form id="sendForm">
                 <div>
                     <label for="name" class="text-gray-800 dark:text-white">Your name</label>
@@ -168,7 +168,7 @@ import { onMounted } from 'vue'
                     </button>
                 </div>
             </form>
-        </div>
+        </div> -->
     </div>
 </template>
 

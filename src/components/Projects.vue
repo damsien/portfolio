@@ -96,8 +96,43 @@ import { onMounted } from 'vue'
         <div id="blob" class="hidden sm:block"></div>
         <div class="z-10">
 
+          <!-- syngit -->
+          <div class="sm:grid sm:grid-cols-2 top-44 flex flex-col-reverse">
+            <div class="w-full sm:top-20 top-0">
+              <div class="mx-auto w-5/6 mb-8">
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
+                  syngit is a Kubernetes operator that allows you to push resources on a git repository and manage their lifecycle.
+                </p><br />
+                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="5">
+                  This operator is currently used in Orange in a production context. It is open-source and has been applied to the CNCF Sandbox program.
+                </p><br />
+                <br>
+                <img src="@/assets/icons/github.png" class="inline-block extern-icon">
+                <a class="link" href="https://github.com/syngit-org/syngit" target="_blank"> Repository</a><br>
+              </div>
+              <table class="items-group">
+                <tr class="text-center mx-auto observe" data-step="6">
+                  <td class="item"><img src="@/assets/icons/golang.png" width="75px" class="item-img mt-1 mb-2 pe-2">Go</td>
+                  <td class="item"><img src="@/assets/icons/github.png" width="55px" class="item-img">Github actions</td>
+                </tr>
+              </table>
+            </div>
+            <div class="w-full mb-12 sm:-top-14">
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">syngit</p>
+              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2024</p>
+              <img src="@/assets/projects/syngit.png" class="mx-auto mt-4" id="syngit-img">
+            </div>
+          </div>
+
+          <br><br><br><br><br><br>
+
           <!-- Pixel War -->
           <div class="sm:grid sm:grid-cols-2 top-44 flex flex-col-reverse">
+            <div class="w-full mb-12">
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
+              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
+              <img src="@/assets/projects/pixelwar.png" class="mx-auto mt-4" id="pixel-war-img">
+            </div>
             <div class="w-full sm:top-10 top-0">
               <div class="mx-auto w-5/6 mb-8 observe" data-step="2">
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
@@ -126,10 +161,10 @@ import { onMounted } from 'vue'
                 </table>
 
                 <div class="lg:inline-grid lg:ms-8 grid xl:grid-cols-none grid-cols-2 mb-7 sm:mb-0 sm:top-4 xl:top-0">
-                  <div class="w-full lg:mb-3">
+                  <!-- <div class="w-full lg:mb-3">
                     <img src="@/assets/icons/web.png" class="inline-block extern-icon">
                     <a class="link" href="https://place.inpt.fr/view" target="_blank"> Open the game</a>
-                  </div>
+                  </div> -->
                   <div>
                     <img src="@/assets/icons/github.png" class="inline-block extern-icon">
                     <a class="link" href="https://github.com/Yltaros/rplace-frontend" target="_blank"> Frontend repository</a><br>
@@ -143,25 +178,12 @@ import { onMounted } from 'vue'
                 </div>
               </div>
             </div>
-            <div class="w-full sm:-top-14 mb-12">
-              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center -top-14 sm:top-0 observe" data-step="1">Pixel War</p>
-              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
-              <img src="@/assets/projects/pixelwar.png" class="mx-auto mt-4" id="pixel-war-img">
-            </div>
           </div>
 
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
           <!-- Smartshuffle -->
           <div class="sm:grid sm:grid-cols-2">
-            <div class="w-full mb-12">
-              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
-              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2020</p>
-              <div class="text-center mt-4 observe" data-step="4">
-                <img id="sm-img1" src="@/assets/projects/smartshuffle1.gif" class="inline-block pe-1">
-                <img id="sm-img2" src="@/assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
-              </div>
-            </div>
             <div class="w-full sm:top-20 top-0">
               <div class="mx-auto w-5/6 mb-8">
                 <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
@@ -181,35 +203,13 @@ import { onMounted } from 'vue'
                 </tr>
               </table>
             </div>
-          </div>
-
-          <br><br><br><br><br><br>
-
-          <!-- Minja -->
-          <div class="sm:grid sm:grid-cols-2 flex flex-col-reverse">
-            <div class="w-full sm:top-20 top-0">
-              <div class="mx-auto w-5/6 mb-8">
-                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold">
-                  Minja is a project realized with the help of 4 other friends. We created a mod for the game Minecraft. The technical challenge was to bring new game mechanics that were not coded in the game.
-                </p><br />
-                <p class="text-left text-lg 4xl:text-2xl 6xl:text-3xl font-semibold observe" data-step="8">
-                  The project was carried out in a specific framework in which we used the agile method. The Jira tool helped us a lot in the management of our sprints.
-                </p>
-                <br>
-                <img src="@/assets/icons/github.png" class="inline-block extern-icon">
-                <a class="link" href="https://github.com/Yltaros/Minja" target="_blank"> Repository</a><br>
-              </div>
-              <table class="items-group">
-                <tr class="text-center observe" data-step="9">
-                  <td class="item"><img src="@/assets/icons/java.png" width="60px" class="item-img mb-2">Java</td>
-                  <td class="item"><img src="@/assets/icons/jira.png" width="60px" class="item-img mb-2">Jira</td>
-                </tr>
-              </table>
-            </div>
             <div class="w-full mb-12">
-              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center sm:mb-0 mb-16">Minja</p>
-              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2022</p>
-              <img src="@/assets/projects/minja.png" id="minja-img" class="mx-auto mt-4 observe" data-step="7">
+              <p class="4xl:text-6xl 6xl:text-7xl mm:text-6xl 2mm:text-5xl text-4xl font-semibold text-center sm:mb-0 mb-16">Smartshuffle</p>
+              <p class="text-xs 4xl:text-md 6xl:text-lg text-center -top-14 sm:top-0">2020</p>
+              <div class="text-center mt-4 observe" data-step="4">
+                <img id="sm-img1" src="@/assets/projects/smartshuffle1.gif" class="inline-block pe-1">
+                <img id="sm-img2" src="@/assets/projects/smartshuffle2.jpg" class="inline-block ps-1">
+              </div>
             </div>
           </div>
 

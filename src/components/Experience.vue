@@ -159,7 +159,7 @@ onMounted(() => {
                           <tr class="text-center">
                             <td class="item"><img src="@/assets/icons/ansible.png" width="42px" class="item-img mb-2.5">Ansible</td>
                             <td class="item"><img src="@/assets/icons/rancher.png" width="60px" class="item-img -mt-3">Rancher</td>
-                            <td class="item"><img src="@/assets/icons/operator-sdk.png" width="41px" class="item-img mb-3">OLM</td>
+                            <td class="item"><img src="@/assets/icons/gitlab.png" width="37px" class="item-img mb-3">Gitlab CI</td>
                           </tr>
                           <tr class="text-center">
                             <td class="item"><img src="@/assets/icons/s3.png" width="60px" class="item-img pt-1">S3</td>

@@ -45,9 +45,9 @@ import { onMounted } from 'vue';
             document.getElementById('moon')?.classList.remove('opacity-50');
             document.getElementById('moon')?.classList.add('opacity-100');
             //@ts-ignore
-            document.getElementById('moon').style.transform = 'rotate(360deg)'
-            //@ts-ignore
             document.getElementById('moon').style.transform = 'rotate(0deg)'
+            //@ts-ignore
+            document.getElementById('moon').style.transform = 'rotate(360deg)'
 
             document.documentElement.classList.remove('dark');
         } else {
@@ -132,7 +132,7 @@ import { onMounted } from 'vue';
 <style scoped>
 
 #moon {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     width: 0.9rem;
     margin-top: 0.4rem;
     right: 3px;
@@ -146,7 +146,8 @@ import { onMounted } from 'vue';
     #moon {
         width: 1.3rem;
         margin-top: 0.2rem;
-        right: 5px;
+        top: 1px;
+        right: 3px;
     }
     #sun {
         width: 1.8rem;
@@ -156,11 +157,10 @@ import { onMounted } from 'vue';
 @media (min-width: 1800px) {
     #moon {
         width: 1.8rem;
-        margin-top: 0.5rem;
+        margin-top: 0.3rem;
     }
     #sun {
         width: 2.5rem;
-        margin-top: 0.2rem;
     }
 }
 
